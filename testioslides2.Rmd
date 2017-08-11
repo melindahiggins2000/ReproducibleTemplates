@@ -5,8 +5,10 @@ date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/l
 output: 
   ioslides_presentation:
     css: my.css
+    widescreen: yes
     includes:
       in_header: header.html
+subtitle: Test subtitle goes here
 ---
 
 ```{r setup, include=FALSE}
