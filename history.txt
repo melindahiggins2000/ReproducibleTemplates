@@ -1,0 +1,102 @@
+
+
+Reproducibiity Crisis Timeline: Milestones in Tackling Research Reliability; December 5, 2016; Hilda Bastian in Reprodubiity PLOS Blog
+
+Early events in 1950-1980's but scale up began in 1990's.
+
+1992 Jon Claerbout coined the term "reproducible research" in his book "EARTH SOUNDINGS ANALYSIS: Processing versus Inversion (PVI)" learn more at http://sepwww.stanford.edu/sep/jon/reproducible.html 
+
+1996 CONSORT statement introduced standards for reporting clinical trials
+
+2004 International Committee of Medical Journal Editors (ICMJE) stated they would not publish a clinical trial that had not been registered.
+
+2005 Ioannidis, J. P. A. Why most published research findings are false. PLoS Med. 2, e124 (2005).
+
+2007 FDA Amendments Act (FDAAA) required more types of clinical trials to be registered
+
+2011 Alsheikh-Ali, A. A., Qureshi, W., Al-Mallah, M. H. & Ioannidis, J. P. Public availability of published research data in high-impact journals. PloS ONE 6, e24357 (2011).
+
+2012 Begley and Ellis reviewed 53 "landmark" studies and for only 6 (11%) were the scientific findings confirmed.
+
+2013 Center for Open Science launches & by 2014 the Open Science Framework has 7000 users with more than 45,000+ and over 15 institutions by 2017
+
+2014 the NIH published their guidelines for addressing reproducibility
+
+2015 The Open Science Collaboration reports that they were only able to replicate between 1/3 to 1/2 of the results from 100 studies
+
+2016 Iqbal, S. A., Wallach, J. D., Khoury, M. J., Schully, S. D. & Ioannidis, J. P. Reproducible research practices and transparency across the biomedical literature. PLoS Biol. 14, e1002333 (2016).
+
+Other timelines
+http://andrewgelman.com/2016/09/21/what-has-happened-down-here-is-the-winds-have-changed/
+
+
+
+
+David, Paul A. (2008) "The Historical Origins of 'Open Science': An Essay on Patronage, 
+Reputation and Common Agency Contracting in the Scientific Revolution," Capitalism and 
+Society: Vol. 3: Iss. 2, Article 5.
+
+
+Center for Open Science launches in 2013
+Open Science Framework has 7000 users in 2014 - now 2017 has 45,000+ and over 15 institutions
+
+Center for open Science https://cos.io/about/mission/
+Mission is to "increase openness, integrity, and reproducibility of research."
+
+Open Science Framework https://osf.io/ 
+The OSF is a free, open source service of the Center for Open Science. We’re aligning scientific practices with scientific values by improving openness, integrity and reproducibility of research
+
+
+
+967 x 626
+870 x 563
+
+881 527
+773 x 501
+
+
+## Next in Lesson 02 ... {.flexbox .vcenter}
+
+<div style="font-size:200%">
+Getting Started with
+</div>
+
+<p>  </p>
+
+<img src="images/Rlogo.png" alt="R logo" style="width:160px;height:140px;"> 
+
+**+**
+
+<img src="images/RStudio-Logo-Blue-Gradient.png" alt="RStudio logo" style="width:400px;height:140px;">
+
+1496 x 170
+598 x 68
+
+===================================
+
+baggerly
+https://www.youtube.com/watch?v=7gYIs7uYbMo
+http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/
+
+main paper https://arxiv.org/pdf/1010.1092.pdf
+
+duke study problems
+http://www.economist.com/node/21528593
+
+economics student - excel errors
+http://nymag.com/daily/intelligencer/2013/04/grad-student-who-shook-global-austerity-movement.html
+http://www.chronicle.com/article/UMass-Graduate-Student-Talks/138763
+
+more excel errors
+https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?utm_term=.44d3fc9147dc
+https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7
+
+
+another perspective - psychcology
+http://andrewgelman.com/2016/09/22/why-is-the-scientific-replication-crisis-centered-on-psychology/
+
+
+
+
+
+

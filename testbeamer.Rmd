@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "Melinda K. Higgins, PhD."
+date: "March 28, 2017"
+output: 
+  beamer_presentation: 
+    keep_tex: true
+    toc: true
+    theme: "PaloAlto"
+    colortheme: "orchid"
+    fonttheme: "professionalfonts"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Section 1
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+# Section 2
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+# Section 3
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+# Section 4
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

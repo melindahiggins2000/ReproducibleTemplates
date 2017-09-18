@@ -1,9 +1,10 @@
 ---
 title: "Test Presentation ioslides"
-author: "Melinda K. Higgins, PhD."
+author: "[Melinda K. Higgins, PhD.](https://melindahiggins2000.github.io/blogdownAcademic/)"
 date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
 output: 
   ioslides_presentation:
+    incremental: true
     css: my.css
     widescreen: yes
     includes:
@@ -37,9 +38,13 @@ When you click the **Knit** <footnote>URL for more info on `knitr` https://yihui
 
 ## Slide with Bullets
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+* Bullet 1
+    + sub bullet 1
+    + sub bullet 2
+    
+* Bullet 2
+
+* Bullet 3
 
 ## Slide with R Output
 
@@ -53,8 +58,48 @@ summary(cars)
 plot(pressure)
 ```
 
-## Output Option
+## slide with a quote
 
+Here is a short poem:
+
+<div class="quote-container2">
+
+> Roses are red <br>
+> violets are blue <br>
+> The sun is shining happily <br>
+> and I hope you are too!
+
+</div>
+
+## Mathjax
+
+Mathjax is supported, so with latex syntax you can get inline  \(A = \pi
+\times r^2 \) or separate maths:
+
+\[
+\begin{aligned}
+I_{1} &= \int_{0}^{2*\pi} \sin(x)
+\\
+I_{2} &= \int_{0}^{2*\pi} \cos(x)
+\end{aligned}
+\]
+
+[Further details](https://support.rstudio.com/hc/en-us/articles/200486328-Equations-in-R-Markdown)
+
+## Movies
+
+Check your browser if it supports your file format. I found (on
+firefox) is that file.mov did not play, but renaming it to file.mp4
+worked. mp4/mov seems best cross-browser.  Here is an example movie;
+see tags for controlling autoplay etc.
+
+<center>
+<video id="sampleMovie1" src="p11ctrlconv.mov" loop="true" autoplay="true" controls></video>
+</center>
+
+
+
+## Output Option
 
 With Rstudio, You can edit various output options with friendly UI.
 

@@ -1,0 +1,58 @@
+---
+title: "Module 1 - Lesson 05"
+author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
+date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
+output: 
+  ioslides_presentation:
+    incremental: true
+    css: ioslides.css
+    widescreen: yes
+    includes:
+      in_header: header.html
+subtitle: Getting Started – R and RStudio
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Outline
+
+* Literate Programming - The `WEB` System
+* Dynamic Documentation - `SWEAVE`
+* Knitting 
+* Universal Document Converter (Creation) 
+
+
+
+## Lesson 05 ... {.flexbox .vcenter}
+
+<div style="font-size:200%">
+Getting Started with
+</div>
+
+<p>  </p>
+
+<img src="images/Rlogo.png" alt="R logo" style="width:160px;height:140px;"> 
+
+&
+
+<img src="images/RStudio-Logo-Blue-Gradient.png" alt="RStudio logo" style="width:400px;height:140px;">
+
+## Next in Lesson 06 ... {.flexbox .vcenter}
+
+<div style="font-size:200%">
+Getting Started with
+</div>
+
+<p>  </p>
+
+<img src="images/Git-Logo-2Color.png" alt="Git logo" style="width:228px;height:95px;">
+
+&
+
+Github
+
+<img src="images/Octocat.png" alt="Octocat Github logo" style="width:200px;height:166px;">
+
+

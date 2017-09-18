@@ -23,8 +23,8 @@ slides > slide {
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 
-  background-image: url(images/hexsingle1crop.png) !important;
-  background-size: 100px !important;
+  background-image: url(images/m1l1.png) !important;
+  background-size: 150px !important;
   background-repeat: no-repeat !important;
   background-position: 93.1% 4% !important;
 }
@@ -36,4 +36,16 @@ slides > slide:not(.nobackground):after {
   bottom: 20px;
   right: 60px;
   line-height: 1.9;
+}
+
+div.quote-container blockquote p {
+  font-size: 18px;
+}
+
+div.quote-container2 blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
 }

@@ -1,0 +1,83 @@
+
+
+1. create github repo - add readme
+
+2. create new r project with version control
+
+3. use > devtools::setup() - to create "package" shell in the folder/directory/repo just created
+
+4. overwrite *.Rproj - I said "3" - yes I agree to overwrite
+
+5. run > dir.create("inst/rmarkdown/templates/myReport/skeleton",recursive = TRUE)
+
+6. create a Rmd file - save it as skeleton.Rmd in the "...inst/rmarkdown/templates/myReport/skeleton/" folder
+
+7. create template.yaml
+
+name: My Report
+
+save it in the "...inst/rmarkdown/templates/myReport/" folder
+
+8. back everything up to github repo
+
+using git bash - go to the "basictemplate1" folder
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .Rbuildignore
+        .gitignore
+        DESCRIPTION
+        NAMESPACE
+        basictemplate1.Rproj
+        inst/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$ git add .
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$ git commit -m "add files for basictemplate1 package"
+[master 933eb19] add files for basictemplate1 package
+ 7 files changed, 62 insertions(+)
+ create mode 100644 .Rbuildignore
+ create mode 100644 .gitignore
+ create mode 100644 DESCRIPTION
+ create mode 100644 NAMESPACE
+ create mode 100644 basictemplate1.Rproj
+ create mode 100644 inst/rmarkdown/templates/myReport/skeleton/skeleton.Rmd
+ create mode 100644 inst/rmarkdown/templates/myReport/template.yaml
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$ git push
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (14/14), 1.68 KiB | 0 bytes/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/melindahiggins2000/basictemplate1.git
+   3f27c4b..933eb19  master -> master
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/basictemplate1 (master)
+$
+
+9. go back to RStudio - install your new package w/template
+
+devtools::install_github("melindahiggins2000/basictemplate1")
+
+10. - create new Rmarkdown from template, you should see your new template
+
+YEA - it works!!
+
+

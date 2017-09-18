@@ -1,0 +1,162 @@
+---
+title: "Test Presentation ioslides"
+author: "[Melinda K. Higgins, PhD.](https://melindahiggins2000.github.io/blogdownAcademic/)"
+date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
+output: 
+  ioslides_presentation:
+    incremental: true
+    css: my.css
+    widescreen: yes
+    includes:
+      in_header: header.html
+subtitle: Test subtitle goes here
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Try out some footnotes
+
+Lets assume I have a footnote.<footnote>First footnote content</footnote> And here we are going to have another one.<footnote>Second footnote content</footnote>
+
+
+## The Second Topic
+
+See auto numbering for footnotes.<footnote>The counter is not set back and continues on the next slide</footnote>
+
+## Testing footnotes
+Some text.<footnote>Fourth footnote with url http://stackoverflow.com</footnote>
+
+Some more text.<footnote>And *another* **footnote**</footnote>
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** <footnote>URL for more info on `knitr` https://yihui.name/knitr/</footnote> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+* Bullet 1
+    + sub bullet 1
+    + sub bullet 2
+    
+* Bullet 2
+
+* Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+## slide with a quote
+
+Here is a short poem:
+
+<div class="quote-container2">
+
+> Roses are red <br>
+> violets are blue <br>
+> The sun is shining happily <br>
+> and I hope you are too!
+
+</div>
+
+## Mathjax
+
+Mathjax is supported, so with latex syntax you can get inline  \(A = \pi
+\times r^2 \) or separate maths:
+
+\[
+\begin{aligned}
+I_{1} &= \int_{0}^{2*\pi} \sin(x)
+\\
+I_{2} &= \int_{0}^{2*\pi} \cos(x)
+\end{aligned}
+\]
+
+[Further details](https://support.rstudio.com/hc/en-us/articles/200486328-Equations-in-R-Markdown)
+
+## Movies
+
+Check your browser if it supports your file format. I found (on
+firefox) is that file.mov did not play, but renaming it to file.mp4
+worked. mp4/mov seems best cross-browser.  Here is an example movie;
+see tags for controlling autoplay etc.
+
+<center>
+<video id="sampleMovie1" src="p11ctrlconv.mov" loop="true" autoplay="true" controls></video>
+</center>
+
+
+
+## Output Option
+
+With Rstudio, You can edit various output options with friendly UI.
+
+<div class="columns-2">
+
+```
+---
+title: "R Markdown Exercise"
+author: "Mansun Kuo"
+date: "July 24, 2014"
+output:
+  html_document:
+    css: assets/css/custom.css
+    fig_caption: no
+    fig_height: 5
+    fig_width: 7
+    highlight: default
+    keep_md: no
+    number_sections: no
+    theme: default
+    toc: yes
+---
+```
+
+
+<img src="images/logotest1.png" alt="logotest" height="400">
+
+</div>
+
+## Table Output
+
+Set `results='asis'` to write raw results from R into the output document
+
+<div class="columns-2">
+
+- `knitr::kable`
+
+    <pre class="markdown"><code>&#96;&#96;&#96;{r, results='asis'}
+    knitr::kable(women)
+    &#96;&#96;&#96;
+    </code></pre>
+
+- `xtable::xtable`
+
+    <pre class="markdown"><code>&#96;&#96;&#96;{r, results='asis'}
+    print(xtable::xtable(women), 
+          type="html", 
+          include.rownames=FALSE)
+    &#96;&#96;&#96;
+    </code></pre>
+
+```{r results='asis', echo=FALSE}
+knitr::kable(head(women))
+# print(xtable::xtable(head(women)), 
+#       type="html", 
+#       include.rownames=FALSE
+#       )
+```
+
+</div>

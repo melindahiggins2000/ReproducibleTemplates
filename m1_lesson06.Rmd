@@ -1,0 +1,44 @@
+---
+title: "Module 1 - Lesson 06"
+author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
+date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
+output: 
+  ioslides_presentation:
+    incremental: true
+    css: ioslides.css
+    widescreen: yes
+    includes:
+      in_header: header.html
+subtitle: Getting Started – Git & Github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Outline
+
+* Literate Programming - The `WEB` System
+* Dynamic Documentation - `SWEAVE`
+* Knitting 
+* Universal Document Converter (Creation) 
+
+
+
+## Lesson 06 ... {.flexbox .vcenter}
+
+Getting Started with
+
+Git
+
++
+
+Github
+
+## Next in Lesson 07 ... {.flexbox .vcenter}
+
+Create your first document!
+
+
+
+

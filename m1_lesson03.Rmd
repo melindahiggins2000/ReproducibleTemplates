@@ -1,0 +1,33 @@
+---
+title: "Module 1 - Lesson 03"
+author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
+date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
+output: 
+  ioslides_presentation:
+    incremental: true
+    css: ioslides.css
+    widescreen: yes
+    includes:
+      in_header: header.html
+subtitle: Reproducible Principles and Practices (with Examples)
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Outline
+
+* Reproducible Principles
+* Standard Practices
+* 538.com - journalism
+* transparency - J. Biostats
+* speed - virus case
+
+
+
+## Next in Lesson 04 ...
+
+Breakdown of Reproducible Components
+
+

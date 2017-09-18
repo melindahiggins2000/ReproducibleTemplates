@@ -1,0 +1,27 @@
+
+
+https://github.com/melindahiggins2000/N736TestData.git
+
+git clone https://github.com/libgit2/libgit2
+
+git clone https://github.com/melindahiggins2000/N736TestData
+
+** remove the s - instead run
+
+git clone http://github.com/melindahiggins2000/N736TestData
+
+git clone http://github.com/melindahiggins2000/testtest
+
+===============================
+
+Git GUI
+Source:  http://github.com/melindahiggins2000/testtest.git
+Target:  C:/MyGithub/testtest
+
+turned off the recursive checkbox
+
+==========================
+
+https://github.com/melindahiggins2000/RepTemplatesArchived.git
+
+git clone http://github.com/melindahiggins2000/RepTemplatesArchived

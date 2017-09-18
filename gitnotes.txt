@@ -1,0 +1,369 @@
+$ rm .git/index.lock
+$ git add docs
+$ git commit -m "add docs folder"
+$ git push
+
+========================================
+the index.lock command came from
+http://stackoverflow.com/questions/38004148/another-git-process-seems-to-be-running-in-this-repository/38004454
+=======================================
+also see suggestions at http://stackoverflow.com/questions/43690977/commit-a-large-number-of-files-in-rstudio-using-git-panel
+--------
+
+Of course you can ignore the GUI and stick to the command-line Git forever, but if you don't want, a quick jump to the command-line git would solve this problem for now.
+
+The temporary solution that I found is as follows:
+
+Click on the blue-gear icon on the GIT panel, inside RStudio.
+Select Shell (a terminal window will pup up!)
+Write the add and commit command in the terminal:
+{ATTENTION: The following command will commit changes on ALL files! You may want to use what is appropriate for your situation!}
+
+    git add -A && git commit -m 'staging all files'
+Now you can go back to the GUI Git, and click on push button. All files that you staged in the terminal window, will be pushed up to your repository.
+----------
+========================================
+made edits to Github repo
+set up github pages to master/docs folder
+need to know the url for these pages - put as baseurl below
+
+in config.toml
+publishDir = "docs"
+baseurl = "https://melindahiggins2000.github.io/blogdownAcademic/"
+=====================================
+also RStudio git seems to hang with the large # of files
+in the /docs directory
+so use git command line
+====================================
+$ rm .git/index.lock
+$ git add docs
+$ git commit -m "update docs folder"
+$ git push
+=================================
+Now it works at https://melindahiggins2000.github.io/blogdownAcademic/
+======================================
+
+
+all notes
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        blogdownAcademic.Rproj
+        config.toml
+        content/
+        docs/
+        index.Rmd
+        public/
+        static/
+        themes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        blogdownAcademic.Rproj
+        config.toml
+        content/
+        docs/
+        index.Rmd
+        public/
+        static/
+        themes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git remote -v
+origin  https://github.com/melindahiggins2000/blogdownAcademic.git (fetch)
+origin  https://github.com/melindahiggins2000/blogdownAcademic.git (push)
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ ls
+archetypes/             config.toml  data/  index.Rmd  public/  themes/
+blogdownAcademic.Rproj  content/     docs/  layouts/   static/
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git add docs
+fatal: Unable to create 'C:/MyGithub/blogdownAcademic/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ rm .git/index.lock
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git add docs
+warning: LF will be replaced by CRLF in docs/404.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/categories/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/categories/r/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/categories/r/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/css/bootstrap.min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/css/font-awesome.min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/css/hugo-academic.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/fonts/academicons.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/fonts/fontawesome-webfont.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/fonts/glyphicons-halflings-regular.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/home/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/js/bootstrap.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/js/hugo-academic.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/js/isotope.pkgd.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/js/jquery-1.12.3.min.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/2015-07-23-r-rmarkdown.Rmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/2015-07-23-r-rmarkdown/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/getting-started/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/managing-content/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/migrate-from-jekyll/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/widgets/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/post/writing-markdown-latex/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/project/deep-learning/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/project/example-external-project/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/project/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication/clothing-search/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication/person-re-identification/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication_types/1/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication_types/1/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication_types/2/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication_types/2/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/publication_types/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/sitemap.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/academic/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/academic/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/deep-learning/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/deep-learning/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/demo/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/demo/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/hugo/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/hugo/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/jekyll/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/jekyll/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/plot/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/plot/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/r-markdown/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/r-markdown/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/regression/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/tags/regression/index.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/talk/example-talk/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/talk/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in docs/talk/index.xml.
+The file will have its original line endings in your working directory.
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git commit -m "add docs folder"
+[master (root-commit) 4570ce2] add docs folder
+ 93 files changed, 17099 insertions(+)
+ create mode 100644 docs/404.html
+ create mode 100644 docs/categories/index.xml
+ create mode 100644 docs/categories/r/index.html
+ create mode 100644 docs/categories/r/index.xml
+ create mode 100644 docs/categories/r/page/1/index.html
+ create mode 100644 docs/css/academicons.min.css
+ create mode 100644 docs/css/bootstrap.min.css
+ create mode 100644 docs/css/font-awesome.min.css
+ create mode 100644 docs/css/highlight.min.css
+ create mode 100644 docs/css/hugo-academic.css
+ create mode 100644 docs/fonts/FontAwesome.otf
+ create mode 100644 docs/fonts/academicons.eot
+ create mode 100644 docs/fonts/academicons.svg
+ create mode 100644 docs/fonts/academicons.ttf
+ create mode 100644 docs/fonts/academicons.woff
+ create mode 100644 docs/fonts/fontawesome-webfont.eot
+ create mode 100644 docs/fonts/fontawesome-webfont.svg
+ create mode 100644 docs/fonts/fontawesome-webfont.ttf
+ create mode 100644 docs/fonts/fontawesome-webfont.woff
+ create mode 100644 docs/fonts/fontawesome-webfont.woff2
+ create mode 100644 docs/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 docs/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 docs/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 docs/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 docs/fonts/glyphicons-halflings-regular.woff2
+ create mode 100644 docs/home/index.xml
+ create mode 100644 docs/img/apple-touch-icon.png
+ create mode 100644 docs/img/boards.jpg
+ create mode 100644 docs/img/bubbles.jpg
+ create mode 100644 docs/img/headers/bubbles-wide.jpg
+ create mode 100644 docs/img/headers/getting-started.png
+ create mode 100644 docs/img/icon.png
+ create mode 100644 docs/img/portrait.jpg
+ create mode 100644 docs/index.html
+ create mode 100644 docs/index.xml
+ create mode 100644 docs/js/bootstrap.min.js
+ create mode 100644 docs/js/hugo-academic.js
+ create mode 100644 docs/js/isotope.pkgd.min.js
+ create mode 100644 docs/js/jquery-1.12.3.min.js
+ create mode 100644 docs/post/2015-07-23-r-rmarkdown.Rmd
+ create mode 100644 docs/post/2015-07-23-r-rmarkdown/index.html
+ create mode 100644 docs/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 docs/post/getting-started/index.html
+ create mode 100644 docs/post/index.html
+ create mode 100644 docs/post/index.xml
+ create mode 100644 docs/post/managing-content/index.html
+ create mode 100644 docs/post/migrate-from-jekyll/index.html
+ create mode 100644 docs/post/page/1/index.html
+ create mode 100644 docs/post/widgets/index.html
+ create mode 100644 docs/post/writing-markdown-latex/index.html
+ create mode 100644 docs/project/deep-learning/index.html
+ create mode 100644 docs/project/example-external-project/index.html
+ create mode 100644 docs/project/index.xml
+ create mode 100644 docs/publication/clothing-search/index.html
+ create mode 100644 docs/publication/index.html
+ create mode 100644 docs/publication/index.xml
+ create mode 100644 docs/publication/person-re-identification/index.html
+ create mode 100644 docs/publication_types/1/index.html
+ create mode 100644 docs/publication_types/1/index.xml
+ create mode 100644 docs/publication_types/1/page/1/index.html
+ create mode 100644 docs/publication_types/2/index.html
+ create mode 100644 docs/publication_types/2/index.xml
+ create mode 100644 docs/publication_types/2/page/1/index.html
+ create mode 100644 docs/publication_types/index.xml
+ create mode 100644 docs/sitemap.xml
+ create mode 100644 docs/tags/academic/index.html
+ create mode 100644 docs/tags/academic/index.xml
+ create mode 100644 docs/tags/academic/page/1/index.html
+ create mode 100644 docs/tags/deep-learning/index.html
+ create mode 100644 docs/tags/deep-learning/index.xml
+ create mode 100644 docs/tags/deep-learning/page/1/index.html
+ create mode 100644 docs/tags/demo/index.html
+ create mode 100644 docs/tags/demo/index.xml
+ create mode 100644 docs/tags/demo/page/1/index.html
+ create mode 100644 docs/tags/hugo/index.html
+ create mode 100644 docs/tags/hugo/index.xml
+ create mode 100644 docs/tags/hugo/page/1/index.html
+ create mode 100644 docs/tags/index.xml
+ create mode 100644 docs/tags/jekyll/index.html
+ create mode 100644 docs/tags/jekyll/index.xml
+ create mode 100644 docs/tags/jekyll/page/1/index.html
+ create mode 100644 docs/tags/plot/index.html
+ create mode 100644 docs/tags/plot/index.xml
+ create mode 100644 docs/tags/plot/page/1/index.html
+ create mode 100644 docs/tags/r-markdown/index.html
+ create mode 100644 docs/tags/r-markdown/index.xml
+ create mode 100644 docs/tags/r-markdown/page/1/index.html
+ create mode 100644 docs/tags/regression/index.html
+ create mode 100644 docs/tags/regression/index.xml
+ create mode 100644 docs/tags/regression/page/1/index.html
+ create mode 100644 docs/talk/example-talk/index.html
+ create mode 100644 docs/talk/index.html
+ create mode 100644 docs/talk/index.xml
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        blogdownAcademic.Rproj
+        config.toml
+        content/
+        index.Rmd
+        public/
+        static/
+        themes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ git push
+Counting objects: 157, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (118/118), done.
+Writing objects: 100% (157/157), 1.58 MiB | 506.00 KiB/s, done.
+Total 157 (delta 45), reused 0 (delta 0)
+remote: Resolving deltas: 100% (45/45), done.
+To https://github.com/melindahiggins2000/blogdownAcademic.git
+ * [new branch]      master -> master
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$ ^C
+
+MKHIGGI@SON-HIGGINS MINGW64 /c/MyGithub/blogdownAcademic (master)
+$
