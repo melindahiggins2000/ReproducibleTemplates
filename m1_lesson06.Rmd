@@ -4,9 +4,10 @@ author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
 date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
 output: 
   ioslides_presentation:
-    incremental: true
+    incremental: false
     css: ioslides.css
     widescreen: yes
+    self_contained: no
     includes:
       in_header: header.html
 subtitle: Getting Started – Git & Github
@@ -16,24 +17,49 @@ subtitle: Getting Started – Git & Github
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Outline
-
-* Literate Programming - The `WEB` System
-* Dynamic Documentation - `SWEAVE`
-* Knitting 
-* Universal Document Converter (Creation) 
-
-
-
 ## Lesson 06 ... {.flexbox .vcenter}
 
+<div style="font-size:200%">
 Getting Started with
+</div>
 
-Git
+<p>  </p>
 
-+
+<img src="images/Git-Logo-2Color.png" alt="Git logo" style="width:228px;height:95px;">
 
-Github
+&
+
+<img src="images/Octocat.png" alt="Octocat Github logo" style="width:200px;height:166px;">
+
+**Github**
+
+## ![](images/GITIconsm.PNG) What is GIT??
+
+* [https://git-scm.com/](https://git-scm.com/)
+
+**GIT** is a widely used source code management system for software development. It was designed and developed in 2005 by Linux kernel developers (e.g. Linus Torvalds) for Linux kernel development. 
+
+**GIT** is a distributed version control system with complete history & version-tracking capabilities. [Other version control systems you may have heard of are Subversion, CVS, Perforce, and ClearCase] 
+
+**GIT** is FREE & distributed under the terms of the GNU General Public License version 2. More @  [https://git-scm.com/](https://git-scm.com/)
+
+## ![](images/GithubIconsm.PNG) What is Github??
+
+* [https://github.com/](https://github.com/)
+
+**Github** is web-based **GIT** repository hosting service. It offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features - for example, native interpretation of [*markdown*](https://daringfireball.net/projects/markdown/) which is MUCH easier to code/write than HTML - very lightweight code for creating documents.
+
+**Github**, unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration. **Github** provides access control and collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+
+## Happy Git and Github for the useR
+
+[http://happygitwithr.com/](http://happygitwithr.com/)
+
+
+
+
+
+
 
 ## Next in Lesson 07 ... {.flexbox .vcenter}
 

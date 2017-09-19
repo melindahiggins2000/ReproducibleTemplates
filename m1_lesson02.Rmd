@@ -4,9 +4,10 @@ author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
 date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
 output: 
   ioslides_presentation:
-    incremental: true
+    incremental: false
     css: ioslides.css
     widescreen: yes
+    self_contained: no
     includes:
       in_header: header.html
 subtitle: Literate Programming & Dynamic Documentation
@@ -22,6 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * Dynamic Documentation - `SWEAVE`
 * The Next Generation - `knitr` + `rmarkdown`
 * Universal Document Converter - `Pandoc`
+* `Rmarkdown` "HUB" via RStudio
 
 ## The `WEB` System by Donald Knuth
 
@@ -108,6 +110,9 @@ In 2012 Yihui Xie, created and released the `knitr` package for R to extend the 
 
 </div></span>
 
+## The Rmarkdown "HUB" via RStudio
+
+<img src="images/rmarkdownHome.PNG" width="850" />
 
 ## Next in Lesson 03 ... {.flexbox .vcenter}
 

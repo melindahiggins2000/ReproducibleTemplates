@@ -4,9 +4,10 @@ author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
 date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
 output: 
   ioslides_presentation:
-    incremental: true
+    incremental: false
     css: ioslides.css
     widescreen: yes
+    self_contained: no
     includes:
       in_header: header.html
 subtitle: Reproducible Principles and Practices (with Examples)
@@ -24,6 +25,73 @@ knitr::opts_chunk$set(echo = FALSE)
 * transparency - J. Biostats
 * speed - virus case
 
+## Reproducible Principles
+
+* organization
+* documentation
+* faster, less re-doing of your own work or others (reinventing the wheel)
+* better teamwork, efficiency, transparency - work break out, alignment of skills sets (divide and conquer) - clearer team roles and task delegation
+* breakdown of components - those that stay the same - those that change and how often
+* documentation of workflow
+* documentation of supporting components, data, files, etc
+* avoid documentation "gaps" - avoid mistakes by novices or those unfamiliar with the project, those outside the team-members
+* documentation of code, software, platform versions - evolution over time - operating systems, operating environments can change or be incompatible or cause "unforced errors" (ok in Windows-7 but "bugs" in Windows-10)
+
+## 10 Simple Rules for Reproducible Computational Research<footnote>Sandve, G.K.; Nekrutenko, A.; Taylor, J.; Hovig, E. (2013) "Ten Simple Rules for Reproducible Computational Research" PLOS Computational Biology, 9(10).[https://doi.org/10.1371/journal.pcbi.1003285](https://doi.org/10.1371/journal.pcbi.1003285)</footnote>
+
+1. For every result, keep track of how it was produced
+2. Avoid Manual Data Manipulation Steps
+3. Archive the Exact Version of All External Programs Used
+4. Version Control All Custom Scripts
+5. Record All Intermediate Results, When POssible in Standardized Formats
+6. For Analyses that include randomness, note underlying random seeds
+7. Always Store Raw Data Behind Plots
+8. Generate Hierarchical Analysis Output, Allowing Layers of Increasing Detail to be Inspected
+9. Connect Textual Statements to Underlying Results
+10. Provide Public Access to Scripts, Runs, and Results
+
+## Standard Practices
+
+* Think about your own work
+* What would you like to automate
+* what would you like to reuse - code, files, formatting, graphics, logos, header, footer, boilerplate
+* what should be shared with the team
+* what do you find yourself re-doing, correcting or reformatting
+* if you won the lottery today (and left your job), what would you need to communicate to your replacement so they could pick up where you left off and complete your current tasks
+
+## Journalism - 538.com
+
+Five Thirty Eight [http://fivethirtyeight.com/](http://fivethirtyeight.com/) website that hosts stories and opinion pieces covering poll analyses, politics, economics, health, popular culture, and sports. The founder, Nate Silver, and the 538 team are best know for their political polling and forecasting during elections since 2008. ESPN now owns 538.com (as of 2013) retaining Nate Silver as the Editor-in-Chief.
+
+Most of their articles provide references and links to the original data sources plus details on how their figures, analyses and statistical models were developed. They also host the data, code and details behind their analyses on Github [https://github.com/fivethirtyeight/](https://github.com/fivethirtyeight/).
+
+We will work with some of these datasets in our exercises later in this course and work with the `fivethirtyeight` R package [https://cran.r-project.org/web/packages/fivethirtyeight/](https://cran.r-project.org/web/packages/fivethirtyeight/).
+
+## Telling Stories with Data Using R
+
+Andrew Flowers (economist, data scientist, journalist and former writer for fivethirtyeight.com) presented "Finding and Telling Stories with R" at the 2017 RStudio Conference (Orlando, FL); webinar recording [https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/](https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/). In his presentation, he highlights the various aspects of "data journalism" and importance of workflow, data processing and transparency in analysis and communication - all key aspects of reproducibility. Andrew Flowers is also a contributor to the `fivethirtyeight` R package.
+
+## transparency - J. Biostats
+
+"Our reproducible research policy is for papers in the journal to be kite-marked D if the data on which they are based are freely available, C if the authors’ code is freely available, and R if both data and code are available, and our Associate Editor for Reproducibility is able to use these to reproduce the results in the paper. Data and code are published electronically on the journal’s website as Supplementary Materials."
+
+[https://academic.oup.com/biostatistics/pages/General_Instructions](https://academic.oup.com/biostatistics/pages/General_Instructions)
+
+Example of an article marked "R" 
+
+Air pollution and health in Scotland: a multicity study 
+Duncan Lee  Claire Ferguson  Richard Mitchell
+Biostatistics, Volume 10, Issue 3, 1 July 2009, Pages 409–423, https://doi.org/10.1093/biostatistics/kxp010 
+
+## speed - virus case
+
+To illustrate the power of reproducible workflow practices and infrastructure, the 2001 outbreak of _E.Coli 0104:H4_ that killed 50 people in Europe should be noted [http://dx.doi.org/10.5524/100001](http://dx.doi.org/10.5524/100001).
+
+Researchers at BGI _(formally the Beijing Genomics Institute)_ in collaboration with the Medical Center Hamburg-Eppendorf rapidly sequenced the genome of the pathogen. However, given the severity of the outbreak, the team announced and released the genome via Twitter promoting the use and release to the world-wide community of microbial genomicists. 
+
+A Github repository was established [https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki](https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki) to "crowdsource" analysis and research to find a treatment.
+
+People started contributing their work in under **24 HOURS** and within **5 DAYS!!** a  bacterial agent was proposed to kill the pathogen. This case, highlights the importance of these methods and work practices not only for speed and efficiency but also in rapidly addressing problems and developing solutions that can save lives.
 
 
 ## Next in Lesson 04 ...

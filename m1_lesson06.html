@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Module 1 - Lesson 06</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2017-09-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Module 1 - Lesson 06',
+                        subtitle: 'Getting Started – Git &amp; Github',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                      },
+
+      // Author information
+      presenters: [
+            {
+        name:  '<a href="https://melindahiggins.netlify.com/">Melinda K. Higgins, PhD.</a>' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <style>
+  div.footnotes {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 0.5em;
+  }
+  </style>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('slide:not(.backdrop):not(.title-slide)').append('<div class=\"footnotes\">');
+  
+    $('footnote').each(function(index) {
+      var text  = $(this).html();
+      var fnNum = (index+1).toString();
+      $(this).html(fnNum.sup());
+  
+      var footnote   = fnNum + '. ' + text + '<br/>';
+      var oldContent = $(this).parents('slide').children('div.footnotes').html();
+      var newContent = oldContent + footnote;
+      $(this).parents('slide').children('div.footnotes').html(newContent);
+    });
+  });
+  </script>
+  <link href="m1_lesson06_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="m1_lesson06_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="m1_lesson06_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="m1_lesson06_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="ioslides.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-09-18<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>Lesson 06 &#8230;</h2></hgroup><article  id="lesson-06-..." class="flexbox vcenter">
+
+<div style="font-size:200%">
+<p>Getting Started with</p></div>
+
+<p>
+
+</p>
+
+<p><img src="images/Git-Logo-2Color.png" alt="Git logo" style="width:228px;height:95px;"></p>
+
+<p>&amp;</p>
+
+<p><img src="images/Octocat.png" alt="Octocat Github logo" style="width:200px;height:166px;"></p>
+
+<p><strong>Github</strong></p>
+
+</article></slide><slide class=''><hgroup><h2><img src='images/GITIconsm.PNG' title=''/> What is GIT??</h2></hgroup><article  id="what-is-git">
+
+<ul>
+<li><a href='https://git-scm.com/' title=''>https://git-scm.com/</a></li>
+</ul>
+
+<p><strong>GIT</strong> is a widely used source code management system for software development. It was designed and developed in 2005 by Linux kernel developers (e.g. Linus Torvalds) for Linux kernel development.</p>
+
+<p><strong>GIT</strong> is a distributed version control system with complete history &amp; version-tracking capabilities. [Other version control systems you may have heard of are Subversion, CVS, Perforce, and ClearCase]</p>
+
+<p><strong>GIT</strong> is FREE &amp; distributed under the terms of the GNU General Public License version 2. More @ <a href='https://git-scm.com/' title=''>https://git-scm.com/</a></p>
+
+</article></slide><slide class=''><hgroup><h2><img src='images/GithubIconsm.PNG' title=''/> What is Github??</h2></hgroup><article  id="what-is-github">
+
+<ul>
+<li><a href='https://github.com/' title=''>https://github.com/</a></li>
+</ul>
+
+<p><strong>Github</strong> is web-based <strong>GIT</strong> repository hosting service. It offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features - for example, native interpretation of <a href='https://daringfireball.net/projects/markdown/' title=''><em>markdown</em></a> which is MUCH easier to code/write than HTML - very lightweight code for creating documents.</p>
+
+<p><strong>Github</strong>, unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration. <strong>Github</strong> provides access control and collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</p>
+
+</article></slide><slide class=''><hgroup><h2>Happy Git and Github for the useR</h2></hgroup><article  id="happy-git-and-github-for-the-user">
+
+<p><a href='http://happygitwithr.com/' title=''>http://happygitwithr.com/</a></p>
+
+</article></slide><slide class=''><hgroup><h2>Next in Lesson 07 &#8230;</h2></hgroup><article  id="next-in-lesson-07-..." class="flexbox vcenter">
+
+<p>Create your first document!</p></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

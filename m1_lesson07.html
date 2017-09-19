@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Module 1 - Lesson 07</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2017-09-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Module 1 - Lesson 07',
+                        subtitle: 'Create your first document!',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                      },
+
+      // Author information
+      presenters: [
+            {
+        name:  '<a href="https://melindahiggins.netlify.com/">Melinda K. Higgins, PhD.</a>' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <style>
+  div.footnotes {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 0.5em;
+  }
+  </style>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('slide:not(.backdrop):not(.title-slide)').append('<div class=\"footnotes\">');
+  
+    $('footnote').each(function(index) {
+      var text  = $(this).html();
+      var fnNum = (index+1).toString();
+      $(this).html(fnNum.sup());
+  
+      var footnote   = fnNum + '. ' + text + '<br/>';
+      var oldContent = $(this).parents('slide').children('div.footnotes').html();
+      var newContent = oldContent + footnote;
+      $(this).parents('slide').children('div.footnotes').html(newContent);
+    });
+  });
+  </script>
+  <link href="m1_lesson07_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="m1_lesson07_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="m1_lesson07_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="m1_lesson07_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="ioslides.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-09-18<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>[OPTIONAL] Intall LaTeX - to create PDF documents</h2></hgroup><article  id="optional-intall-latex---to-create-pdf-documents">
+
+<p>If you want to create PDF (portable document format) files, you will also need to install LaTeX. Download and install from <a href='https://www.latex-project.org/get/' title=''>https://www.latex-project.org/get/</a>:</p>
+
+<ul>
+<li>Linux <a href='http://www.tug.org/texlive/' title=''>http://www.tug.org/texlive/</a></li>
+<li>Mac OS X - MacTex <a href='http://www.tug.org/mactex/' title=''>http://www.tug.org/mactex/</a></li>
+<li>Windows - MiKTeX <a href='https://miktex.org/' title=''>https://miktex.org/</a></li>
+</ul>
+
+<p><strong>NOTE</strong> I recommend installing the full version with all associated packages so you&#39;re not constantly updating and installing packages on the fly. However, doing the full install will take awhile not only to download everything but also to get everything installed.</p>
+
+</article></slide><slide class=''><hgroup><h2>STEPS for creating your first document</h2></hgroup><article  id="steps-for-creating-your-first-document">
+
+<ol>
+<li>Make sure that R, RStudio, and Git are installed</li>
+<li>Create a Github Account</li>
+<li>Create a new Github repository &quot;MyFirstDocument&quot; with a Readme page - Click &quot;Clone or Download&quot; and In the &quot;Clone with HTTPS&quot; click to copy the URL to the clipboard</li>
+<li>Open RStudio - create a New Project with Version Control - paste in the URL for the Github repository you just created. Choose a good location on your local system to save your project (e.g. &quot;C:&quot;).</li>
+<li>In RStudio, create a new <code>rmarkdown</code> file - /File/New File/R Markdown/ - choose Document - HTML format put in a title and your name - click OK.</li>
+<li>For now, you don&#39;t need to change anything. Click down arrow next to &quot;Knit&quot; and choose &quot;Knit to HTML&quot;. The first time you try this, RStudio may ask you to install <code>rmarkdown</code> or <code>knitr</code> or other necessary packages.</li>
+<li>If that works, also try &quot;Knit to Word&quot; to try creating a DOC formatted document.</li>
+<li>[OPTIONAL] If you have LaTeX installed, you can also try &quot;Knit to PDF&quot;.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Backup and Sync up with Github</h2></hgroup><article  id="backup-and-sync-up-with-github">
+
+<ul>
+<li>Click on the &quot;Git&quot; tab and you&#39;ll see the new files you just created.</li>
+<li>We can &quot;push&quot; these files up to Github and track the changes and version using Git</li>
+<li>We can do this using the RStudio interface, but this can be slow and often does not work well when there are many changes and many files that need to be synced.</li>
+<li>Instead, use Git Bash to:
+
+<ol>
+<li>change directory to your new Github repository with your new RStudio project</li>
+<li>add the files you want to back up in the Github repository (&quot;staging&quot;)</li>
+<li>commit the files you want to back up (&quot;snapshot of your files&quot;) - add a descriptive comment about your changes and updates</li>
+<li>push the files to Github [PUSH indicates copying files from your local system up to the Github repository &quot;cloud&quot;]</li>
+<li>check git status</li>
+</ol></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Git Bash</h2></hgroup><article  id="git-bash">
+
+<table class = 'rmdtable'>
+<col width="9%" />
+<col width="31%" />
+<col width="37%" />
+<tr class="header">
+<th align="left">STEP</th>
+<th align="left"><strong>Git Bash Command</strong></th>
+<th align="left">Explanation</th>
+</tr>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left"><code>$ cd /c/MyGithub/MyFirstDocument</code></td>
+<td align="left">change directory to your project folder</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left"><code>$ git add .</code></td>
+<td align="left">stage all files to be added to the Github repository</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left"><code>$ git commit -m &quot;files for My First Document&quot;</code></td>
+<td align="left">commit the files, add a description of these changes</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left"><code>$ git push</code></td>
+<td align="left">PUSH the files UP to your Github account</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left"><code>$ git status</code></td>
+<td align="left">check the status of the sync</td>
+</tr>
+</table></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

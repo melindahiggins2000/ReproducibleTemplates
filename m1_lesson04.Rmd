@@ -4,9 +4,10 @@ author: "[Melinda K. Higgins, PhD.](https://melindahiggins.netlify.com/)"
 date: '`r Sys.Date()`<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a>'
 output: 
   ioslides_presentation:
-    incremental: true
+    incremental: false
     css: ioslides.css
     widescreen: yes
+    self_contained: no
     includes:
       in_header: header.html
 subtitle: Reproducible Components
@@ -18,12 +19,103 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Outline
 
-* Literate Programming - The `WEB` System
-* Dynamic Documentation - `SWEAVE`
-* Knitting 
-* Universal Document Converter (Creation) 
 
 
+## Key Components of Reproducibility
+
+1. Documentation
+2. Organization
+3. Automation
+4. Dissemination
+
+## Documentation
+
+* main component (usally) is the text
+* text is then formatted, styles applied via "markup/markdown"
+* well written
+* good organization and flow
+* should be easily accessible
+* should be understood by team members at all levels
+
+code + text + figures combined [e.g. literate programming]
+
+## Data
+
+* high quality
+* error checks - implausible values
+* often changes/is updated - want to automatically update reports
+* need visualizations
+
+## Organization
+
+* projects grow
+* supporting documentation and files - numerous
+* relationships change and can grow more complex
+* need file organization, naming, perhaps even user-based access and security (partitioned by "need to know"; those with editing and write permissions versus read-only)
+* file names should be 
+    - readable by the computer, easy to search, easy to sort
+    - human readable with logical naming schemes and contain enough info so human knows what is in the file/what the file is for
+    - and short enough to be reasonable managable
+
+## more notes
+
+[workflow graphics??]
+[http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
+
+c.gandrud's book [http://christophergandrud.github.io/RepResR-RStudio/](http://christophergandrud.github.io/RepResR-RStudio/) - chanpter 2 PDF available online
+
+research compendium examples [https://github.com/ropensci/rrrpkg](https://github.com/ropensci/rrrpkg)
+
+CRAN task view for Reproducible Research [https://cran.r-project.org/web/views/ReproducibleResearch.html](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+## file organization - examples
+
+* data - raw
+* data - processed or output
+* figures/images
+* videos or other media
+* code - logical units and pieces
+* supporting files/documentation
+
+## Automation
+
+* write code/scripts to automate
+    - data raw to processed output
+    - creating and removing temporary files
+    - creating tables, figures, other components
+    - assembliong the components into final documents, products
+    - rendering documents into multiple/desired formats
+    
+## version - control - move to git/github lectures??
+
+move this to later lesson
+
+see more at [http://rpubs.com/minebocek/user2017-ors](http://rpubs.com/minebocek/user2017-ors)
+
+## Dissemination
+
+* sharing archiving data and code
+* sometimes expectation/requirement of funding agency, publisher
+* increased visibility, you as source - default subject matter expert
+* speed of collaboration - faster advancement of science, knowledge
+* good will with community/public
+
+## ways to share
+
+* dropbox/google drive
+* github better
+* data repositories 
+    - (GenBank, PDB)
+    - github, bitbucket
+    - dryad, figshare, zenodo
+* institutional reports (harvard, emory, others?)
+* journal supplementary - arxiv, j.biostats, plot one, others??
+* blogs/websites
+* RSS feeds
+* rpubs
+
+
+willingness to share research [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828)
 
 ## Next in Lesson 05 ... {.flexbox .vcenter}
 
