@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * Dynamic Documentation - `SWEAVE`
 * The Next Generation - `knitr` + `rmarkdown`
 * Universal Document Converter - `Pandoc`
-* `Rmarkdown` "HUB" via RStudio
+* The **RStudio** "HUB" via `rmarkdown`
 
 ## The `WEB` System by Donald Knuth
 
@@ -37,19 +37,19 @@ The first published literate programming environment was `WEB`. Donald Knuth int
 
 </div>
 
-## Funnel Web Tutorial Manual by Ross N. Williams
+## More Literate Programming Tools
 
-There are various implementations of the literate programming concept, one of which is Funnel Web by Ross N. Williams
+Since WEB was introduced in 1981, many other programs implementing literate programming have emerged over time including:
 
-<img src="images/funnelweb.PNG" alt="Funnel Web" style="width:356px;height:30px;">
-
-<div class="quote-container2">
-
-> _"A traditional computer program consists of a **text file containing program code**. Scattered in amongst the program code are comments which describe the various parts of the code._
-
-> _In literate programming the emphasis is reversed. Instead of writing code containing documentation, the literate programmer writes **documentation containing code**. ... **The "program" then becomes primarily a document directed at humans**, with the code being herded between "code delimiters" from where it can be extracted and shuffled out sideways to the language system by literate programming tools."_<footnote>[http://www.literateprogramming.com/fwtut.pdf](http://www.literateprogramming.com/fwtut.pdf)</footnote>
-
-</div>
+* CWEB also created by Donald Knuth with Silvio Levy which was adapted for the C and C++ programming language instead of Pascal
+* Axiom developed by IBM
+* Noweb
+* Literate
+* Funnel WEB
+* Molly 
+* Codnar
+* Jupyter Notebook (formerly IPython Notebook)
+* R Notebooks
 
 ## `SWEAVE` by Friedrich Leisch
 
@@ -59,7 +59,7 @@ There are various implementations of the literate programming concept, one of wh
 
 > What is Sweave?
 
-> _"Sweave is a tool that allows to embed the R code for complete data analyses in latex documents. The purpose is to create dynamic reports, which can be updated automatically if data or analysis change. Instead of inserting a prefabricated graph or table into the report, the master document contains the R code necessary to obtain it. When run through R, all data analysis output (tables, graphs, etc.) is created on the fly and inserted into a final latex document. The report can be automatically updated if data or analysis change, which allows for truly reproducible research."_<footnote>Friedrich Leisch. Sweave: Dynamic generation of statistical reports using literate data analysis. In Wolfgang Härdle and Bernd Rönz, editors, Compstat 2002 - Proceedings in Computational Statistics, pages 575-580. Physica Verlag, Heidelberg, 2002. ISBN 3-7908-1517-9.</footnote>
+> _"Sweave is a tool that allows to embed the R code for complete data analyses in latex documents. The purpose is to create dynamic reports, which can be updated automatically if data or analysis change. Instead of inserting a prefabricated graph or table into the report, the master document contains the R code necessary to obtain it. When run through R, all data analysis output (tables, graphs, etc.) is **created on the fly and inserted** into a final latex document. The report can be **automatically updated if data or analysis change, which allows for truly reproducible research**."_<footnote>Friedrich Leisch. Sweave: Dynamic generation of statistical reports using literate data analysis. In Wolfgang Härdle and Bernd Rönz, editors, Compstat 2002 - Proceedings in Computational Statistics, pages 575-580. Physica Verlag, Heidelberg, 2002. ISBN 3-7908-1517-9.</footnote>
 
 </div>
 
@@ -110,7 +110,7 @@ In 2012 Yihui Xie, created and released the `knitr` package for R to extend the 
 
 </div></span>
 
-## The Rmarkdown "HUB" via RStudio
+## The **RStudio**"HUB" 
 
 <img src="images/rmarkdownHome.PNG" width="850" />
 

@@ -1,0 +1,24 @@
+cd C:\RepResearchCourse
+
+git config --global user.name 'Melinda Higgins'
+git config --global user.email 'mhigginsconsulting@gmail.com' 
+git config --global --list
+
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+https://github.com/melindahiggins2001/MyFirstRepo.git
+
+SWITCH back to other account
+
+LOG out at Github.com
+LOG back in on other account at Github.com
+
+ran
+git config --global --list
+still shows mhigginsconsulting - so run these
+{currently logged in at Github.com as melinda.higgins@emory.edu}
+
+git config --global user.name 'Melinda Higgins'
+git config --global user.email 'melinda.higgins@emory.edu' 
+git config --global --list
+

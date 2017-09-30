@@ -10,7 +10,7 @@ output:
     self_contained: no
     includes:
       in_header: header.html
-subtitle: Reproducible Principles and Practices (with Examples)
+subtitle: Reproducible Principles, Practices & Examples
 ---
 
 ```{r setup, include=FALSE}
@@ -21,23 +21,22 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * Reproducible Principles
 * Standard Practices
-* 538.com - journalism
-* transparency - J. Biostats
-* speed - virus case
+* Journalism - 538.com
+* Telling Stories with Data
+* Transparency - Journal of Biostatsatistics
+* Speed - 2001 outbreak of _E.Coli 0104:H4_
 
-## Reproducible Principles
+## Reproducible Principles - Process & Structure
 
-* organization
-* documentation
-* faster, less re-doing of your own work or others (reinventing the wheel)
-* better teamwork, efficiency, transparency - work break out, alignment of skills sets (divide and conquer) - clearer team roles and task delegation
-* breakdown of components - those that stay the same - those that change and how often
-* documentation of workflow
-* documentation of supporting components, data, files, etc
-* avoid documentation "gaps" - avoid mistakes by novices or those unfamiliar with the project, those outside the team-members
-* documentation of code, software, platform versions - evolution over time - operating systems, operating environments can change or be incompatible or cause "unforced errors" (ok in Windows-7 but "bugs" in Windows-10)
+* Organization
+* Clear Documentation
+* Standardized
+* Centralized
+* Efficiency
 
 ## 10 Simple Rules for Reproducible Computational Research<footnote>Sandve, G.K.; Nekrutenko, A.; Taylor, J.; Hovig, E. (2013) "Ten Simple Rules for Reproducible Computational Research" PLOS Computational Biology, 9(10).[https://doi.org/10.1371/journal.pcbi.1003285](https://doi.org/10.1371/journal.pcbi.1003285)</footnote>
+
+<span style="font-size: 20px;"><div class="columns-1">
 
 1. For every result, keep track of how it was produced
 2. Avoid Manual Data Manipulation Steps
@@ -50,49 +49,57 @@ knitr::opts_chunk$set(echo = FALSE)
 9. Connect Textual Statements to Underlying Results
 10. Provide Public Access to Scripts, Runs, and Results
 
+</span></div>
+
 ## Standard Practices
 
-* Think about your own work
-* What would you like to automate
-* what would you like to reuse - code, files, formatting, graphics, logos, header, footer, boilerplate
-* what should be shared with the team
-* what do you find yourself re-doing, correcting or reformatting
-* if you won the lottery today (and left your job), what would you need to communicate to your replacement so they could pick up where you left off and complete your current tasks
+_Think about your own work..._
+
+* What do you want to automate?
+* What could you re-use?
+    - code, files, formatting, graphics, logos, header, footer, boilerplate
+* What should you share with your team?
+* What do you find yourself doing over and over?
+    - correcting or reformatting
+* If you won the lottery today (and left your job), what do you need to tell your replacement so they can pick up where you left off and complete your current tasks?
 
 ## Journalism - 538.com
 
-Five Thirty Eight [http://fivethirtyeight.com/](http://fivethirtyeight.com/) website that hosts stories and opinion pieces covering poll analyses, politics, economics, health, popular culture, and sports. The founder, Nate Silver, and the 538 team are best know for their political polling and forecasting during elections since 2008. ESPN now owns 538.com (as of 2013) retaining Nate Silver as the Editor-in-Chief.
+538.com [http://fivethirtyeight.com/](http://fivethirtyeight.com/) hosts stories and opinion pieces covering poll analyses, politics, economics, health, popular culture, and sports. The founder, Nate Silver, and the 538 team are best known for their political polling and forecasting during the United States Presidential and related elections since 2008. ESPN now owns 538.com (as of 2013) retaining Nate Silver as the Editor-in-Chief.
 
 Most of their articles provide references and links to the original data sources plus details on how their figures, analyses and statistical models were developed. They also host the data, code and details behind their analyses on Github [https://github.com/fivethirtyeight/](https://github.com/fivethirtyeight/).
 
 We will work with some of these datasets in our exercises later in this course and work with the `fivethirtyeight` R package [https://cran.r-project.org/web/packages/fivethirtyeight/](https://cran.r-project.org/web/packages/fivethirtyeight/).
 
-## Telling Stories with Data Using R
+## Telling Stories with Data
 
-Andrew Flowers (economist, data scientist, journalist and former writer for fivethirtyeight.com) presented "Finding and Telling Stories with R" at the 2017 RStudio Conference (Orlando, FL); webinar recording [https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/](https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/). In his presentation, he highlights the various aspects of "data journalism" and importance of workflow, data processing and transparency in analysis and communication - all key aspects of reproducibility. Andrew Flowers is also a contributor to the `fivethirtyeight` R package.
+Andrew Flowers (economist, data scientist, journalist and former writer for fivethirtyeight.com) presented "Finding and Telling Stories with R" at the 2017 RStudio Conference (Orlando, FL).
 
-## transparency - J. Biostats
+The webinar recording of his presentation is available online  [https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/](https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/). 
 
-"Our reproducible research policy is for papers in the journal to be kite-marked D if the data on which they are based are freely available, C if the authors’ code is freely available, and R if both data and code are available, and our Associate Editor for Reproducibility is able to use these to reproduce the results in the paper. Data and code are published electronically on the journal’s website as Supplementary Materials."
+In his presentation, he highlights the various aspects of "data journalism" and importance of workflow, data processing and transparency in analysis and communication - all key aspects of reproducibility. Andrew Flowers is also a contributor to the `fivethirtyeight` R package.
+
+## **Transparency** - Journal of Biostatsatistics
+
+"Our reproducible research policy is for papers in the journal to be kite-marked **D** if the data on which they are based are freely available, **C** if the authors’ code is freely available, and **R** if both data and code are available, and our Associate Editor for Reproducibility is able to use these to reproduce the results in the paper. Data and code are published electronically on the journal’s website as Supplementary Materials."
 
 [https://academic.oup.com/biostatistics/pages/General_Instructions](https://academic.oup.com/biostatistics/pages/General_Instructions)
 
-Example of an article marked "R" 
+Example of an article marked **R**:
 
-Air pollution and health in Scotland: a multicity study 
-Duncan Lee  Claire Ferguson  Richard Mitchell
-Biostatistics, Volume 10, Issue 3, 1 July 2009, Pages 409–423, https://doi.org/10.1093/biostatistics/kxp010 
+* Air pollution and health in Scotland: a multicity study; by 
+Duncan Lee; Claire Ferguson ; and Richard Mitchell; 
+Biostatistics, Volume 10, Issue 3, 1 July 2009, Pages 409–423, [https://doi.org/10.1093/biostatistics/kxp010](https://doi.org/10.1093/biostatistics/kxp010) 
 
-## speed - virus case
+## Speed - 2001 outbreak of _E.Coli 0104:H4_
 
-To illustrate the power of reproducible workflow practices and infrastructure, the 2001 outbreak of _E.Coli 0104:H4_ that killed 50 people in Europe should be noted [http://dx.doi.org/10.5524/100001](http://dx.doi.org/10.5524/100001).
+In 2001 there was an outbreak of _E.Coli 0104:H4_ that killed 50 people in Europe [http://dx.doi.org/10.5524/100001](http://dx.doi.org/10.5524/100001).
 
-Researchers at BGI _(formally the Beijing Genomics Institute)_ in collaboration with the Medical Center Hamburg-Eppendorf rapidly sequenced the genome of the pathogen. However, given the severity of the outbreak, the team announced and released the genome via Twitter promoting the use and release to the world-wide community of microbial genomicists. 
+Researchers at BGI _(formally the Beijing Genomics Institute)_ worked in collaboration with the Medical Center in Hamburg-Eppendorf to rapidly sequence the genome of the pathogen. Given the severity of the outbreak, the team announced and released the genome via Twitter to the world-wide community of microbial genomicists. 
 
 A Github repository was established [https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki](https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki) to "crowdsource" analysis and research to find a treatment.
 
-People started contributing their work in under **24 HOURS** and within **5 DAYS!!** a  bacterial agent was proposed to kill the pathogen. This case, highlights the importance of these methods and work practices not only for speed and efficiency but also in rapidly addressing problems and developing solutions that can save lives.
-
+People started contributing their work in under **24 HOURS** and within **5 DAYS!!** a bacterial agent was proposed to kill the pathogen. _**This case, highlights the importance of these methods and work practices not only for speed and efficiency but also in rapidly addressing problems and developing solutions that can save lives.**_
 
 ## Next in Lesson 04 ...
 

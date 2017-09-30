@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-09-18" />
+  <meta name="date" content="2017-09-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -123,7 +123,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-09-18<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-09-28<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
           </hgroup>
   </slide>
 
@@ -134,7 +134,7 @@
 <li>Dynamic Documentation - <code>SWEAVE</code></li>
 <li>The Next Generation - <code>knitr</code> + <code>rmarkdown</code></li>
 <li>Universal Document Converter - <code>Pandoc</code></li>
-<li><code>Rmarkdown</code> &quot;HUB&quot; via RStudio</li>
+<li>The <strong>RStudio</strong> &quot;HUB&quot; via <code>rmarkdown</code></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>The <code>WEB</code> System by Donald Knuth</h2></hgroup><article  id="the-web-system-by-donald-knuth">
@@ -148,20 +148,21 @@
 <p><em>&quot;I chose the name <code>WEB</code> partly because it was one of the few three-letter words of English that hadn’t already been applied to computers. But as time went on, I’ve become extremely pleased with the name, because I think that a complex piece of software is, indeed, best <strong>regarded as a web that has been delicately pieced together from simple materials</strong>. &#8230; If we <strong>express a program as a web of ideas</strong>, we can emphasize its structural properties in a natural and satisfying way.&quot;</em><footnote><a href='http://www.literateprogramming.com/knuthweb.pdf' title=''>http://www.literateprogramming.com/knuthweb.pdf</a></footnote></p>
 </blockquote></div>
 
-</article></slide><slide class=''><hgroup><h2>Funnel Web Tutorial Manual by Ross N. Williams</h2></hgroup><article  id="funnel-web-tutorial-manual-by-ross-n.-williams">
+</article></slide><slide class=''><hgroup><h2>More Literate Programming Tools</h2></hgroup><article  id="more-literate-programming-tools">
 
-<p>There are various implementations of the literate programming concept, one of which is Funnel Web by Ross N. Williams</p>
+<p>Since WEB was introduced in 1981, many other programs implementing literate programming have emerged over time including:</p>
 
-<p><img src="images/funnelweb.PNG" alt="Funnel Web" style="width:356px;height:30px;"></p>
-
-<div class="quote-container2">
-<blockquote>
-<p><em>&quot;A traditional computer program consists of a <strong>text file containing program code</strong>. Scattered in amongst the program code are comments which describe the various parts of the code.</em></p>
-</blockquote>
-
-<blockquote>
-<p><em>In literate programming the emphasis is reversed. Instead of writing code containing documentation, the literate programmer writes <strong>documentation containing code</strong>. &#8230; <strong>The &quot;program&quot; then becomes primarily a document directed at humans</strong>, with the code being herded between &quot;code delimiters&quot; from where it can be extracted and shuffled out sideways to the language system by literate programming tools.&quot;</em><footnote><a href='http://www.literateprogramming.com/fwtut.pdf' title=''>http://www.literateprogramming.com/fwtut.pdf</a></footnote></p>
-</blockquote></div>
+<ul>
+<li>CWEB also created by Donald Knuth with Silvio Levy which was adapted for the C and C++ programming language instead of Pascal</li>
+<li>Axiom developed by IBM</li>
+<li>Noweb</li>
+<li>Literate</li>
+<li>Funnel WEB</li>
+<li>Molly</li>
+<li>Codnar</li>
+<li>Jupyter Notebook (formerly IPython Notebook)</li>
+<li>R Notebooks</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2><code>SWEAVE</code> by Friedrich Leisch</h2></hgroup><article  id="sweave-by-friedrich-leisch">
 
@@ -173,7 +174,7 @@
 </blockquote>
 
 <blockquote>
-<p><em>&quot;Sweave is a tool that allows to embed the R code for complete data analyses in latex documents. The purpose is to create dynamic reports, which can be updated automatically if data or analysis change. Instead of inserting a prefabricated graph or table into the report, the master document contains the R code necessary to obtain it. When run through R, all data analysis output (tables, graphs, etc.) is created on the fly and inserted into a final latex document. The report can be automatically updated if data or analysis change, which allows for truly reproducible research.&quot;</em><footnote>Friedrich Leisch. Sweave: Dynamic generation of statistical reports using literate data analysis. In Wolfgang Härdle and Bernd Rönz, editors, Compstat 2002 - Proceedings in Computational Statistics, pages 575-580. Physica Verlag, Heidelberg, 2002. ISBN 3-7908-1517-9.</footnote></p>
+<p><em>&quot;Sweave is a tool that allows to embed the R code for complete data analyses in latex documents. The purpose is to create dynamic reports, which can be updated automatically if data or analysis change. Instead of inserting a prefabricated graph or table into the report, the master document contains the R code necessary to obtain it. When run through R, all data analysis output (tables, graphs, etc.) is <strong>created on the fly and inserted</strong> into a final latex document. The report can be <strong>automatically updated if data or analysis change, which allows for truly reproducible research</strong>.&quot;</em><footnote>Friedrich Leisch. Sweave: Dynamic generation of statistical reports using literate data analysis. In Wolfgang Härdle and Bernd Rönz, editors, Compstat 2002 - Proceedings in Computational Statistics, pages 575-580. Physica Verlag, Heidelberg, 2002. ISBN 3-7908-1517-9.</footnote></p>
 </blockquote></div>
 
 </article></slide><slide class=''><hgroup><h2>The next evolution <code>&lt;- knitr</code></h2></hgroup><article  id="the-next-evolution---knitr">
@@ -222,7 +223,7 @@
 
 <p></span></p>
 
-</article></slide><slide class=''><hgroup><h2>The Rmarkdown &quot;HUB&quot; via RStudio</h2></hgroup><article  id="the-rmarkdown-hub-via-rstudio">
+</article></slide><slide class=''><hgroup><h2>The <strong>RStudio</strong>&quot;HUB&quot;</h2></hgroup><article  id="the-rstudiohub">
 
 <p><img src="images/rmarkdownHome.PNG" width="850" /></p>
 

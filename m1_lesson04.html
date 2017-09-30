@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-09-18" />
+  <meta name="date" content="2017-09-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -123,41 +123,55 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-09-18<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-09-29<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
           </hgroup>
   </slide>
 
 <slide class=''><hgroup><h2>Outline</h2></hgroup><article  id="outline">
 
-</article></slide><slide class=''><hgroup><h2>Key Components of Reproducibility</h2></hgroup><article  id="key-components-of-reproducibility">
-
 <ol>
+<li>&quot;Data&quot;</li>
 <li>Documentation</li>
 <li>Organization</li>
 <li>Automation</li>
 <li>Dissemination</li>
 </ol>
 
-</article></slide><slide class=''><hgroup><h2>Documentation</h2></hgroup><article  id="documentation">
+</article></slide><slide class=''><hgroup><h2>Data - &quot;for example&#8230;&quot;</h2></hgroup><article  id="data---for-example...">
 
 <ul>
-<li>main component (usally) is the text</li>
-<li>text is then formatted, styles applied via &quot;markup/markdown&quot;</li>
-<li>well written</li>
-<li>good organization and flow</li>
-<li>should be easily accessible</li>
-<li>should be understood by team members at all levels</li>
+<li>often thought of as numbers in a spreadsheet</li>
+<li>can be unstructured text</li>
+<li>images</li>
+<li>video and other media</li>
+<li>interview transcripts</li>
+<li>artwork</li>
+<li>and any other &quot;RAW&quot; materials needed to complete your project</li>
 </ul>
 
-<p>code + text + figures combined [e.g. literate programming]</p>
-
-</article></slide><slide class=''><hgroup><h2>Data</h2></hgroup><article  id="data">
+</article></slide><slide class=''><hgroup><h2>Data - &quot;should be&#8230;&quot;</h2></hgroup><article  id="data---should-be...">
 
 <ul>
 <li>high quality</li>
-<li>error checks - implausible values</li>
-<li>often changes/is updated - want to automatically update reports</li>
-<li>need visualizations</li>
+<li>reviewed for completeness</li>
+<li>reviewed for mistakes and errors</li>
+<li>checked for changes or updates
+
+<ul>
+<li>ideally, your final reproducible workflow will allow up these changes and updates to be automatically updates into your final products</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Documentation</h2></hgroup><article  id="documentation">
+
+<ul>
+<li>main component is text</li>
+<li>well written</li>
+<li>good organization and flow</li>
+<li>easily accessible</li>
+<li>understood by team members at all levels</li>
+<li>code + text + figures combined [e.g. literate programming]</li>
+<li>at end, formatting styles applied via &quot;markup/markdown&quot;</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Organization</h2></hgroup><article  id="organization">
@@ -166,87 +180,83 @@
 <li>projects grow</li>
 <li>supporting documentation and files - numerous</li>
 <li>relationships change and can grow more complex</li>
-<li>need file organization, naming, perhaps even user-based access and security (partitioned by &quot;need to know&quot;; those with editing and write permissions versus read-only)</li>
-<li>file names should be
+<li>need file organization and naming schemes</li>
+<li>file names should be:
 
 <ul>
-<li>readable by the computer, easy to search, easy to sort</li>
+<li>readable by the computer, easy to search, easy to sort (especially by date and author if needed)</li>
 <li>human readable with logical naming schemes and contain enough info so human knows what is in the file/what the file is for</li>
-<li>and short enough to be reasonable managable</li>
+<li>and short enough to be reasonably manageable</li>
 </ul></li>
+<li>consider user-based access and security (partitioned by &quot;need to know&quot; <em>[users with editing and write permissions versus users with read-only access]</em></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>more notes</h2></hgroup><article  id="more-notes">
-
-<p>[workflow graphics??][<a href='http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424' title=''>http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424</a>](<a href='http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424' title=''>http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424</a>)</p>
-
-<p>c.gandrud&#39;s book <a href='http://christophergandrud.github.io/RepResR-RStudio/' title=''>http://christophergandrud.github.io/RepResR-RStudio/</a> - chanpter 2 PDF available online</p>
-
-<p>research compendium examples <a href='https://github.com/ropensci/rrrpkg' title=''>https://github.com/ropensci/rrrpkg</a></p>
-
-<p>CRAN task view for Reproducible Research <a href='https://cran.r-project.org/web/views/ReproducibleResearch.html' title=''>https://cran.r-project.org/web/views/ReproducibleResearch.html</a></p>
-
-</article></slide><slide class=''><hgroup><h2>file organization - examples</h2></hgroup><article  id="file-organization---examples">
-
-<ul>
-<li>data - raw</li>
-<li>data - processed or output</li>
-<li>figures/images</li>
-<li>videos or other media</li>
-<li>code - logical units and pieces</li>
-<li>supporting files/documentation</li>
-</ul>
+<p>Research Compendium Example <a href='https://github.com/ropensci/rrrpkg' title=''>https://github.com/ropensci/rrrpkg</a></p>
 
 </article></slide><slide class=''><hgroup><h2>Automation</h2></hgroup><article  id="automation">
 
 <ul>
+<li>at a minimum, a diagram or instructions for workflow should be documented on how the components are to be assembled for your final product</li>
 <li>write code/scripts to automate
 
 <ul>
 <li>data raw to processed output</li>
 <li>creating and removing temporary files</li>
 <li>creating tables, figures, other components</li>
-<li>assembliong the components into final documents, products</li>
+<li>assembling the components into final documents, products</li>
 <li>rendering documents into multiple/desired formats</li>
 </ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>version - control - move to git/github lectures??</h2></hgroup><article  id="version---control---move-to-gitgithub-lectures">
-
-<p>move this to later lesson</p>
-
-<p>see more at <a href='http://rpubs.com/minebocek/user2017-ors' title=''>http://rpubs.com/minebocek/user2017-ors</a></p>
-
-</article></slide><slide class=''><hgroup><h2>Dissemination</h2></hgroup><article  id="dissemination">
+</article></slide><slide class=''><hgroup><h2>Dissemination - Why?</h2></hgroup><article  id="dissemination---why">
 
 <ul>
-<li>sharing archiving data and code</li>
+<li>store and share your data and code – even if it is only for your future reference</li>
 <li>sometimes expectation/requirement of funding agency, publisher</li>
 <li>increased visibility, you as source - default subject matter expert</li>
 <li>speed of collaboration - faster advancement of science, knowledge</li>
 <li>good will with community/public</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>ways to share</h2></hgroup><article  id="ways-to-share">
+</article></slide><slide class=''><hgroup><h2>Dissemination - How?</h2></hgroup><article  id="dissemination---how">
 
 <ul>
-<li>dropbox/google drive</li>
-<li>github better</li>
-<li>data repositories
+<li>Cloud-based &quot;File Storage&quot;
 
 <ul>
-<li>(GenBank, PDB)</li>
-<li>github, bitbucket</li>
-<li>dryad, figshare, zenodo</li>
+<li>Dropbox <a href='https://www.dropbox.com/' title=''>https://www.dropbox.com/</a></li>
+<li>Google drive <a href='https://www.google.com/drive/' title=''>https://www.google.com/drive/</a></li>
+<li>Github (better with version control and tracking) <a href='https://github.com/' title=''>https://github.com/</a></li>
 </ul></li>
-<li>institutional reports (harvard, emory, others?)</li>
-<li>journal supplementary - arxiv, j.biostats, plot one, others??</li>
-<li>blogs/websites</li>
-<li>RSS feeds</li>
-<li>rpubs</li>
+<li>Data repositories
+
+<ul>
+<li>GenBank <a href='https://www.ncbi.nlm.nih.gov/genbank/' title=''>https://www.ncbi.nlm.nih.gov/genbank/</a></li>
+<li>PDB <a href='https://www.rcsb.org/pdb/home/home.do' title=''>https://www.rcsb.org/pdb/home/home.do</a></li>
+</ul></li>
+<li>In addition to Github
+
+<ul>
+<li>Bitbucket <a href='https://bitbucket.org/' title=''>https://bitbucket.org/</a></li>
+<li>Dryad <a href='http://datadryad.org/' title=''>http://datadryad.org/</a></li>
+<li>Figshare <a href='https://figshare.com/' title=''>https://figshare.com/</a></li>
+<li>Zenodo <a href='https://zenodo.org/' title=''>https://zenodo.org/</a></li>
+</ul></li>
 </ul>
 
-<p>willingness to share research <a href='http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828' title=''>http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828</a></p>
+</article></slide><slide class=''><hgroup><h2>Dissemination - Who? <em>(e.g. stakeholders)</em></h2></hgroup><article  id="dissemination---who-e.g.-stakeholders">
+
+<ul>
+<li>Yourself</li>
+<li>Your organization - internal reports</li>
+<li>Journals - articles, manuscripts</li>
+<li>Books</li>
+<li>Blogs/Websites</li>
+<li>RSS feeds</li>
+<li>Rpubs <a href='https://rpubs.com/' title=''>https://rpubs.com/</a></li>
+<li>Gitbook <a href='https://www.gitbook.com/' title=''>https://www.gitbook.com/</a></li>
+<li>Bookdown <a href='https://bookdown.org/yihui/bookdown/' title=''>https://bookdown.org/yihui/bookdown/</a></li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Next in Lesson 05 &#8230;</h2></hgroup><article  id="next-in-lesson-05-..." class="flexbox vcenter">
 

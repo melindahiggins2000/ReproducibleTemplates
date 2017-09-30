@@ -35,6 +35,15 @@ knitr::opts_chunk$set(echo = FALSE)
 * artwork
 * and any other "RAW" materials needed to complete your project
 
+## file organization - examples
+
+* data - raw
+* data - processed or output
+* figures/images
+* videos or other media
+* code - logical units and pieces
+* supporting files/documentation
+
 ## Data - "should be..."
 
 * high quality
@@ -62,55 +71,62 @@ knitr::opts_chunk$set(echo = FALSE)
 * file names should be:
     - readable by the computer, easy to search, easy to sort (especially by date and author if needed)
     - human readable with logical naming schemes and contain enough info so human knows what is in the file/what the file is for
-    - and short enough to be reasonably manageable
-* consider user-based access and security (partitioned by "need to know" _[users with editing and write permissions versus users with read-only access]_
+    - and short enough to be reasonable managable
+* consider user-based access and security (partitioned by "need to know" _[usres with editing and write permissions versus users with read-only access]_
 
-Research Compendium Example [https://github.com/ropensci/rrrpkg](https://github.com/ropensci/rrrpkg)
+
+## more notes
+
+[workflow graphics??]
+[http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
+
+c.gandrud's book [http://christophergandrud.github.io/RepResR-RStudio/](http://christophergandrud.github.io/RepResR-RStudio/) - chanpter 2 PDF available online
+
+research compendium examples [https://github.com/ropensci/rrrpkg](https://github.com/ropensci/rrrpkg)
+
+CRAN task view for Reproducible Research [https://cran.r-project.org/web/views/ReproducibleResearch.html](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+
 
 ## Automation
 
-* at a minimum, a diagram or instructions for workflow should be documented on how the components are to be assembled for your final product
 * write code/scripts to automate
     - data raw to processed output
     - creating and removing temporary files
     - creating tables, figures, other components
-    - assembling the components into final documents, products
+    - assembliong the components into final documents, products
     - rendering documents into multiple/desired formats
     
-## Dissemination - Why?
+## version - control - move to git/github lectures??
 
-* store and share your data and code – even if it is only for your future reference
+move this to later lesson
+
+see more at [http://rpubs.com/minebocek/user2017-ors](http://rpubs.com/minebocek/user2017-ors)
+
+## Dissemination
+
+* sharing archiving data and code
 * sometimes expectation/requirement of funding agency, publisher
 * increased visibility, you as source - default subject matter expert
 * speed of collaboration - faster advancement of science, knowledge
 * good will with community/public
 
-## Dissemination - How?
+## ways to share
 
-* Cloud-based "File Storage"
-    - Dropbox [https://www.dropbox.com/](https://www.dropbox.com/)
-    - Google drive [https://www.google.com/drive/](https://www.google.com/drive/)
-    - Github (better with version control and tracking) [https://github.com/](https://github.com/)
-* Data repositories 
-    - GenBank [https://www.ncbi.nlm.nih.gov/genbank/](https://www.ncbi.nlm.nih.gov/genbank/)
-    - PDB [https://www.rcsb.org/pdb/home/home.do](https://www.rcsb.org/pdb/home/home.do)
-* In addition to Github
-    - Bitbucket [https://bitbucket.org/](https://bitbucket.org/)
-    - Dryad [http://datadryad.org/](http://datadryad.org/)
-    - Figshare [https://figshare.com/](https://figshare.com/)
-    - Zenodo [https://zenodo.org/](https://zenodo.org/)
-        
-## Dissemination - Who? _(e.g. stakeholders)_
-   
-* Yourself
-* Your organization - internal reports
-* Journals - articles, manuscripts
-* Books
-* Blogs/Websites
+* dropbox/google drive
+* github better
+* data repositories 
+    - (GenBank, PDB)
+    - github, bitbucket
+    - dryad, figshare, zenodo
+* institutional reports (harvard, emory, others?)
+* journal supplementary - arxiv, j.biostats, plot one, others??
+* blogs/websites
 * RSS feeds
-* Rpubs [https://rpubs.com/](https://rpubs.com/)
-* Gitbook [https://www.gitbook.com/](https://www.gitbook.com/)
-* Bookdown [https://bookdown.org/yihui/bookdown/](https://bookdown.org/yihui/bookdown/)
+* rpubs
+
+
+willingness to share research [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828)
 
 ## Next in Lesson 05 ... {.flexbox .vcenter}
 

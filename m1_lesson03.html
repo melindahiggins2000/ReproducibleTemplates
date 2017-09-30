@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-09-18" />
+  <meta name="date" content="2017-09-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,7 +22,7 @@
       // Slide settings
       settings: {
                 title: 'Module 1 - Lesson 03',
-                        subtitle: 'Reproducible Principles and Practices (with Examples)',
+                        subtitle: 'Reproducible Principles, Practices &amp; Examples',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -123,7 +123,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-09-18<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-09-28<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
           </hgroup>
   </slide>
 
@@ -132,27 +132,27 @@
 <ul>
 <li>Reproducible Principles</li>
 <li>Standard Practices</li>
-<li>538.com - journalism</li>
-<li>transparency - J. Biostats</li>
-<li>speed - virus case</li>
+<li>Journalism - 538.com</li>
+<li>Telling Stories with Data</li>
+<li>Transparency - Journal of Biostatsatistics</li>
+<li>Speed - 2001 outbreak of <em>E.Coli 0104:H4</em></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Reproducible Principles</h2></hgroup><article  id="reproducible-principles">
+</article></slide><slide class=''><hgroup><h2>Reproducible Principles - Process &amp; Structure</h2></hgroup><article  id="reproducible-principles---process-structure">
 
 <ul>
-<li>organization</li>
-<li>documentation</li>
-<li>faster, less re-doing of your own work or others (reinventing the wheel)</li>
-<li>better teamwork, efficiency, transparency - work break out, alignment of skills sets (divide and conquer) - clearer team roles and task delegation</li>
-<li>breakdown of components - those that stay the same - those that change and how often</li>
-<li>documentation of workflow</li>
-<li>documentation of supporting components, data, files, etc</li>
-<li>avoid documentation &quot;gaps&quot; - avoid mistakes by novices or those unfamiliar with the project, those outside the team-members</li>
-<li>documentation of code, software, platform versions - evolution over time - operating systems, operating environments can change or be incompatible or cause &quot;unforced errors&quot; (ok in Windows-7 but &quot;bugs&quot; in Windows-10)</li>
+<li>Organization</li>
+<li>Clear Documentation</li>
+<li>Standardized</li>
+<li>Centralized</li>
+<li>Efficiency</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>10 Simple Rules for Reproducible Computational Research<footnote>Sandve, G.K.; Nekrutenko, A.; Taylor, J.; Hovig, E. (2013) &quot;Ten Simple Rules for Reproducible Computational Research&quot; PLOS Computational Biology, 9(10).<a href='https://doi.org/10.1371/journal.pcbi.1003285' title=''>https://doi.org/10.1371/journal.pcbi.1003285</a></footnote></h2></hgroup><article  id="simple-rules-for-reproducible-computational-researchsandve-g.k.-nekrutenko-a.-taylor-j.-hovig-e.-2013-ten-simple-rules-for-reproducible-computational-research-plos-computational-biology-910.httpsdoi.org10.1371journal.pcbi.1003285">
 
+<span style="font-size: 20px;">
+
+<div class="columns-1">
 <ol>
 <li>For every result, keep track of how it was produced</li>
 <li>Avoid Manual Data Manipulation Steps</li>
@@ -166,48 +166,65 @@
 <li>Provide Public Access to Scripts, Runs, and Results</li>
 </ol>
 
+</span></div>
+
 </article></slide><slide class=''><hgroup><h2>Standard Practices</h2></hgroup><article  id="standard-practices">
 
+<p><em>Think about your own work&#8230;</em></p>
+
 <ul>
-<li>Think about your own work</li>
-<li>What would you like to automate</li>
-<li>what would you like to reuse - code, files, formatting, graphics, logos, header, footer, boilerplate</li>
-<li>what should be shared with the team</li>
-<li>what do you find yourself re-doing, correcting or reformatting</li>
-<li>if you won the lottery today (and left your job), what would you need to communicate to your replacement so they could pick up where you left off and complete your current tasks</li>
+<li>What do you want to automate?</li>
+<li>What could you re-use?
+
+<ul>
+<li>code, files, formatting, graphics, logos, header, footer, boilerplate</li>
+</ul></li>
+<li>What should you share with your team?</li>
+<li>What do you find yourself doing over and over?
+
+<ul>
+<li>correcting or reformatting</li>
+</ul></li>
+<li>If you won the lottery today (and left your job), what do you need to tell your replacement so they can pick up where you left off and complete your current tasks?</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Journalism - 538.com</h2></hgroup><article  id="journalism---538.com">
 
-<p>Five Thirty Eight <a href='http://fivethirtyeight.com/' title=''>http://fivethirtyeight.com/</a> website that hosts stories and opinion pieces covering poll analyses, politics, economics, health, popular culture, and sports. The founder, Nate Silver, and the 538 team are best know for their political polling and forecasting during elections since 2008. ESPN now owns 538.com (as of 2013) retaining Nate Silver as the Editor-in-Chief.</p>
+<p>538.com <a href='http://fivethirtyeight.com/' title=''>http://fivethirtyeight.com/</a> hosts stories and opinion pieces covering poll analyses, politics, economics, health, popular culture, and sports. The founder, Nate Silver, and the 538 team are best known for their political polling and forecasting during the United States Presidential and related elections since 2008. ESPN now owns 538.com (as of 2013) retaining Nate Silver as the Editor-in-Chief.</p>
 
 <p>Most of their articles provide references and links to the original data sources plus details on how their figures, analyses and statistical models were developed. They also host the data, code and details behind their analyses on Github <a href='https://github.com/fivethirtyeight/' title=''>https://github.com/fivethirtyeight/</a>.</p>
 
 <p>We will work with some of these datasets in our exercises later in this course and work with the <code>fivethirtyeight</code> R package <a href='https://cran.r-project.org/web/packages/fivethirtyeight/' title=''>https://cran.r-project.org/web/packages/fivethirtyeight/</a>.</p>
 
-</article></slide><slide class=''><hgroup><h2>Telling Stories with Data Using R</h2></hgroup><article  id="telling-stories-with-data-using-r">
+</article></slide><slide class=''><hgroup><h2>Telling Stories with Data</h2></hgroup><article  id="telling-stories-with-data">
 
-<p>Andrew Flowers (economist, data scientist, journalist and former writer for fivethirtyeight.com) presented &quot;Finding and Telling Stories with R&quot; at the 2017 RStudio Conference (Orlando, FL); webinar recording <a href='https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/' title=''>https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/</a>. In his presentation, he highlights the various aspects of &quot;data journalism&quot; and importance of workflow, data processing and transparency in analysis and communication - all key aspects of reproducibility. Andrew Flowers is also a contributor to the <code>fivethirtyeight</code> R package.</p>
+<p>Andrew Flowers (economist, data scientist, journalist and former writer for fivethirtyeight.com) presented &quot;Finding and Telling Stories with R&quot; at the 2017 RStudio Conference (Orlando, FL).</p>
 
-</article></slide><slide class=''><hgroup><h2>transparency - J. Biostats</h2></hgroup><article  id="transparency---j.-biostats">
+<p>The webinar recording of his presentation is available online <a href='https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/' title=''>https://www.rstudio.com/resources/videos/finding-and-telling-stories-with-r/</a>.</p>
 
-<p>&quot;Our reproducible research policy is for papers in the journal to be kite-marked D if the data on which they are based are freely available, C if the authors’ code is freely available, and R if both data and code are available, and our Associate Editor for Reproducibility is able to use these to reproduce the results in the paper. Data and code are published electronically on the journal’s website as Supplementary Materials.&quot;</p>
+<p>In his presentation, he highlights the various aspects of &quot;data journalism&quot; and importance of workflow, data processing and transparency in analysis and communication - all key aspects of reproducibility. Andrew Flowers is also a contributor to the <code>fivethirtyeight</code> R package.</p>
+
+</article></slide><slide class=''><hgroup><h2><strong>Transparency</strong> - Journal of Biostatsatistics</h2></hgroup><article  id="transparency---journal-of-biostatsatistics">
+
+<p>&quot;Our reproducible research policy is for papers in the journal to be kite-marked <strong>D</strong> if the data on which they are based are freely available, <strong>C</strong> if the authors’ code is freely available, and <strong>R</strong> if both data and code are available, and our Associate Editor for Reproducibility is able to use these to reproduce the results in the paper. Data and code are published electronically on the journal’s website as Supplementary Materials.&quot;</p>
 
 <p><a href='https://academic.oup.com/biostatistics/pages/General_Instructions' title=''>https://academic.oup.com/biostatistics/pages/General_Instructions</a></p>
 
-<p>Example of an article marked &quot;R&quot;</p>
+<p>Example of an article marked <strong>R</strong>:</p>
 
-<p>Air pollution and health in Scotland: a multicity study Duncan Lee Claire Ferguson Richard Mitchell Biostatistics, Volume 10, Issue 3, 1 July 2009, Pages 409–423, <a href='https://doi.org/10.1093/biostatistics/kxp010' title=''>https://doi.org/10.1093/biostatistics/kxp010</a></p>
+<ul>
+<li>Air pollution and health in Scotland: a multicity study; by Duncan Lee; Claire Ferguson ; and Richard Mitchell; Biostatistics, Volume 10, Issue 3, 1 July 2009, Pages 409–423, <a href='https://doi.org/10.1093/biostatistics/kxp010' title=''>https://doi.org/10.1093/biostatistics/kxp010</a></li>
+</ul>
 
-</article></slide><slide class=''><hgroup><h2>speed - virus case</h2></hgroup><article  id="speed---virus-case">
+</article></slide><slide class=''><hgroup><h2>Speed - 2001 outbreak of <em>E.Coli 0104:H4</em></h2></hgroup><article  id="speed---2001-outbreak-of-e.coli-0104h4">
 
-<p>To illustrate the power of reproducible workflow practices and infrastructure, the 2001 outbreak of <em>E.Coli 0104:H4</em> that killed 50 people in Europe should be noted <a href='http://dx.doi.org/10.5524/100001' title=''>http://dx.doi.org/10.5524/100001</a>.</p>
+<p>In 2001 there was an outbreak of <em>E.Coli 0104:H4</em> that killed 50 people in Europe <a href='http://dx.doi.org/10.5524/100001' title=''>http://dx.doi.org/10.5524/100001</a>.</p>
 
-<p>Researchers at BGI <em>(formally the Beijing Genomics Institute)</em> in collaboration with the Medical Center Hamburg-Eppendorf rapidly sequenced the genome of the pathogen. However, given the severity of the outbreak, the team announced and released the genome via Twitter promoting the use and release to the world-wide community of microbial genomicists.</p>
+<p>Researchers at BGI <em>(formally the Beijing Genomics Institute)</em> worked in collaboration with the Medical Center in Hamburg-Eppendorf to rapidly sequence the genome of the pathogen. Given the severity of the outbreak, the team announced and released the genome via Twitter to the world-wide community of microbial genomicists.</p>
 
 <p>A Github repository was established <a href='https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki' title=''>https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/wiki</a> to &quot;crowdsource&quot; analysis and research to find a treatment.</p>
 
-<p>People started contributing their work in under <strong>24 HOURS</strong> and within <strong>5 DAYS!!</strong> a bacterial agent was proposed to kill the pathogen. This case, highlights the importance of these methods and work practices not only for speed and efficiency but also in rapidly addressing problems and developing solutions that can save lives.</p>
+<p>People started contributing their work in under <strong>24 HOURS</strong> and within <strong>5 DAYS!!</strong> a bacterial agent was proposed to kill the pathogen. <em><strong>This case, highlights the importance of these methods and work practices not only for speed and efficiency but also in rapidly addressing problems and developing solutions that can save lives.</strong></em></p>
 
 </article></slide><slide class=''><hgroup><h2>Next in Lesson 04 &#8230;</h2></hgroup><article  id="next-in-lesson-04-...">
 
