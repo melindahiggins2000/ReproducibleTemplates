@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-09-30" />
+  <meta name="date" content="2017-10-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -123,7 +123,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-09-30<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-10-02<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="by-nc-sa-4.0-88x31.png" style="border-width:0" src="images/by-nc-sa-4.0-88x31.png" /></a></p>
           </hgroup>
   </slide>
 
@@ -144,7 +144,16 @@
 
 <p><img src="images/Git-Logo-2Color.png" alt="Git logo" style="width:228px;height:95px;"></p>
 
-</article></slide><slide class=''><hgroup><h2><img src='images/GithubIconsm.PNG' title=''/> What is Github??</h2></hgroup><article  id="what-is-github">
+</article></slide><slide class=''><hgroup><h2>A few assumptions for this lesson (and the whole course)</h2></hgroup><article  id="a-few-assumptions-for-this-lesson-and-the-whole-course">
+
+<ol>
+<li>It is assumed that you know how to and have rights to install software on your computer</li>
+<li>It is assumed that you know how to find files on your computer</li>
+<li>It is assumed that you can create and delete files and directories on your computer</li>
+<li>It is assumed that you have network access to the Internet and can access the websites listed in this (and other) lessons</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2><img src="images/Octocat.png" alt="Octocat Github logo" style="width:100px;">What is Github??</h2></hgroup><article  id="what-is-github">
 
 <ul>
 <li><a href='https://github.com/' title=''>https://github.com/</a></li>
@@ -167,7 +176,7 @@
 <li><em>NOTE: For this course, I assume that you are creating a PUBLIC Github account, which is FREE. You can create a PRIVATE Github account for a fee.</em></li>
 </ul></li>
 <li><p>You can register one Github account per email.</p></li>
-<li><p>Once you get logged in to your Github Account, go to your account settings to customize your bio, email, website URL, and more&#8230;</p></li>
+<li><p>Once you get logged in to your Github Account, go to your account settings to customize your photo, bio, email, website URL, and more&#8230;</p></li>
 <li><p>When you first get started you won&#39;t have any repositories, but we will be creating repositories for each project.</p></li>
 </ol>
 
@@ -177,7 +186,7 @@
 
 <p><em>&#8230;next let&#39;s install Git&#8230;</em></p>
 
-</article></slide><slide class=''><hgroup><h2><img src='images/GITIconsm.PNG' title=''/> What is GIT??</h2></hgroup><article  id="what-is-git">
+</article></slide><slide class=''><hgroup><h2><img src="images/Git-Icon-1788C.png" alt="Git logo" style="width:100px;">What is GIT??</h2></hgroup><article  id="what-is-git">
 
 <ul>
 <li><a href='https://git-scm.com/' title=''>https://git-scm.com/</a></li>
@@ -185,9 +194,9 @@
 
 <p><strong>GIT</strong> is a widely used source code management system for software development. It was designed and developed in 2005 by Linux kernel developers (e.g. Linus Torvalds) for Linux kernel development.</p>
 
-<p><strong>GIT</strong> is a distributed version control system with complete history &amp; version-tracking capabilities. [Other version control systems you may have heard of are Subversion, CVS, Perforce, and ClearCase]</p>
+<p><strong>GIT</strong> is a distributed version control system with complete history &amp; version-tracking capabilities. <em>[Other version control systems you may have heard of are Subversion, CVS, Perforce, and ClearCase]</em></p>
 
-<p><strong>GIT</strong> is FREE &amp; distributed under the terms of the GNU General Public License version 2. More @ <a href='https://git-scm.com/' title=''>https://git-scm.com/</a></p>
+<p><strong>GIT</strong> is FREE (cost) &amp; freely distributed under the terms of the GNU General Public License version 2. More @ <a href='https://git-scm.com/' title=''>https://git-scm.com/</a></p>
 
 </article></slide><slide class=''><hgroup><h2>Download and install Git</h2></hgroup><article  id="download-and-install-git">
 
@@ -208,7 +217,7 @@
 <li>type in a name for your repository such as &quot;MyFirstRepo&quot;</li>
 <li>put in a short description like &quot;My First Github Repository&quot;</li>
 <li>Go ahead and click the box to select &quot;Initialize this repository with a README&quot;</li>
-<li>keep everything else the same (use the default)</li>
+<li>keep everything else the same (use the defaults)</li>
 <li>click &quot;Create Repository&quot;</li>
 </ul></li>
 </ol>
@@ -233,11 +242,11 @@
 
 <ul>
 <li>&quot;Git Bash&quot; - we will use this one</li>
-<li>&quot;Git CMD&quot;</li>
-<li>&quot;Git GUI&quot;</li>
+<li>&quot;Git CMD&quot; - similar to Git Bash, but we will not use</li>
+<li>&quot;Git GUI&quot; - a very simple Graphical User Interface (GUI) - we will not use</li>
 </ul></li>
 <li>Run the &quot;Git Bash&quot; option - This opens another window</li>
-<li>Change to your newly created directory by typing <code>cd C:\RepTemplates</code></li>
+<li>Change to your newly created directory by typing <code>cd C:\RepTemplates</code> <em>(as shown on next slide)</em></li>
 </ol>
 
 </article></slide><slide class=''><hgroup><h2>Git Bash Window</h2></hgroup><article  id="git-bash-window">
@@ -248,16 +257,20 @@
 
 <p>To get more information about the Git commands we&#39;re using and getting connected to your Github account, we will refer to the details provided in the &quot;Happy Git and GitHub for the useR&quot; book by Jenny Bryan. It is available online for FREE at <a href='http://happygitwithr.com/' title=''>http://happygitwithr.com/</a></p>
 
-<p>Read these chapters:</p>
+<p>In this lesson we will cover some of the information in these chapters:</p>
 
 <ul>
 <li>Chapter 8: &quot;Introduce Yourself to Git&quot;</li>
+<li>Chapter 9: &quot;Install a Git Client&quot;</li>
 <li>Chapter 10: &quot;Connect to Github&quot;</li>
+<li>Chapter 11: &quot;Cache credentials for HTTPS&quot;</li>
+<li>Chapter 12: &quot;Set up keys for SSH&quot;</li>
+<li>Chapter 26: &quot;Burn it all down&quot;</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Introduce yourself to Git</h2></hgroup><article  id="introduce-yourself-to-git">
 
-<p>First, introduce yourself to Git - type the following 3 commands in your Git Bash window. Put in your name and email you used to set up your Github account. Be sure you are logged into Github.</p>
+<p><em>[Be sure you are already logged into your Github account.]</em> First, introduce yourself to Git - type the following 3 commands in your Git Bash window. Put in your name and email you used to set up your Github account.</p>
 
 <pre >git config --global user.name &#39;Jennifer Bryan&#39;
 git config --global user.email &#39;jenny@stat.ubc.ca&#39;
@@ -265,19 +278,40 @@ git config --global --list</pre>
 
 <p>Keep your Git Bash window open.</p>
 
-</article></slide><slide class=''><hgroup><h2>Connect to your Github repo</h2></hgroup><article  id="connect-to-your-github-repo">
+</article></slide><slide class=''><hgroup><h2>&quot;pushmi-pullyu&quot;</h2></hgroup><article  id="pushmi-pullyu" class="columns-2">
+
+<p>The pushmi-pullyu was a fictional animal in the <em><strong>Doctor Dolittle</strong></em> series of children&#39;s books by Hugh Lofting with two heads on opposite ends of its body.</p>
+
+<p>We will be PUSH&#39;ing and PULL&#39;ing content in and out of your project repository between your local computer and your Github account using Git version control.</p>
+
+<p>A PULL moves content from the cloud to your local computer.</p>
+
+<p>A PUSH moved content from your local computer to the cloud.</p>
+
+<div class="centered">
+<p><img src="images/gitpushpulldiagram.PNG" alt="gitpushpulldiagram" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Clone your Github repo</h2></hgroup><article  id="clone-your-github-repo">
 
 <p>Next we&#39;ll connect to Github and PULL a copy of your new repository &quot;MyFirstRepo&quot; to your local drive <code>C:\RepTemplates</code></p>
 
 <p>In your Git Bash Window you will use the <code>git clone</code> command. However, you also need the URL address for the repository. The easiest way to look this up is to go back to your Github account, click on the &quot;MyFirstRepo&quot; repository. Then click on the green button to &quot;Clone or Download&quot; to see the URL, then click the button on the right to &quot;Copy the URL to the clipboard&quot;</p>
 
-<p><img src="images/gitclone.PNG" alt="gitbash" style="width:400px;"></p>
+<div class="centered">
+<p><img src="images/gitclone.PNG" alt="gitbash" style="width:400px;"></p></div>
 
-</article></slide><slide class=''><hgroup><h2>Git Bash command</h2></hgroup><article  id="git-bash-command">
+</article></slide><slide class=''><hgroup><h2>First PULL to Clone your repository</h2></hgroup><article  id="first-pull-to-clone-your-repository" class="columns-2">
+
+<p>For this first &quot;Clone&quot; of your Github repository, you will PULL the content from your Github repository down to your local computer.</p>
+
+<div class="centered">
+<p><img src="images/gitpulldiagram.PNG" alt="gitpulldiagram" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Git Bash - First PULL to Clone your repository</h2></hgroup><article  id="git-bash---first-pull-to-clone-your-repository">
 
 <p>In the Bit Bash window, type the git commands listed below - Be sure to use YOUR URL to YOUR Github Repo &quot;MyFirstRepo&quot;.</p>
 
-<p>If everything works fine, when you first type <code>ls</code> which &quot;lists&quot; the content of the directory, you should see that a new directory is created for your new repository <code>MyFirstRepo/</code></p>
+<p>If everything works fine, when you first type <code>ls</code> which &quot;lists&quot; the content of the directory, you should see that a new directory was created for your new repository <code>MyFirstRepo</code> under the <code>C:\RepTemplates</code> directory.</p>
 
 <p>Then you can <code>cd</code> &quot;change directory&quot; to <code>MyFirstRepo</code> and run <code>ls</code> again to see the one file in your repository <code>README.cd</code>.</p>
 
@@ -286,15 +320,525 @@ ls
 cd MyFirstRepo
 ls</pre>
 
+<p><em>&#8230; see next slide &#8230;</em></p>
+
 </article></slide><slide class=''><hgroup><h2>Git Bash - Example Cloning</h2></hgroup><article  id="git-bash---example-cloning">
 
 <p><img src="images/gitclone2.PNG" alt="gitbash" style="width:700px;"></p>
 
 <p>Congratulations!! You are now connected to Github with Version Control using Git.</p>
 
-</article></slide><slide class=''><hgroup><h2>Next in Lesson 07 &#8230;</h2></hgroup><article  id="next-in-lesson-07-..." class="flexbox vcenter">
+<p>Let&#39;s do this again using RStudio&#8230;</p>
 
-<p>Create your first reproducible <code>rmarkdown</code> document!</p></article></slide>
+</article></slide><slide class=''><hgroup><h2>Connecting RStudio to Github</h2></hgroup><article  id="connecting-rstudio-to-github">
+
+<div class="columns-2">
+<ul>
+<li><p>Make sure you are logged into your Github account at <a href='https://github.com' title=''>https://github.com</a>.</p></li>
+<li><p>Start RStudio and keep it open</p></li>
+<li><p>In RStudio, go to the Menu at the top for Tools/Global Options - Click on Git/SVN</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitsvn.PNG" alt="gitsvn" style="width:500px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>Connecting RStudio to Github</h2></hgroup><article  id="connecting-rstudio-to-github-1">
+
+<div class="columns-2">
+<div class="centered">
+<p><img src="images/gitsvn.PNG" alt="gitsvn" style="width:500px;"></p></div>
+
+<ul>
+<li><p>Make sure &quot;Enable version control interface for RStudio projects&quot; is checked</p></li>
+<li><p>Git executable - find where <code>git.exe</code> is on your local drive - this is the executable file which runs Git. Mine is located at &quot;C:/Program Files/Git/bin/git.exe&quot;</p></li>
+<li><p>We will not be using SVN so this is &quot;not found&quot; or blank</p></li>
+</ul></div>
+
+</article></slide><slide class=''><hgroup><h2>Credentials</h2></hgroup><article  id="credentials">
+
+<ul>
+<li>Each time you make a change and want to sync up your changes either from your local drive to the Github cloud or from the cloud to your local drive, you need to pass your credentials to Github.</li>
+<li>You can do this by typing in your Github username and password each time - huge pain - or you need to set up credentials on your computer</li>
+<li>You can use either the HTTPS (<strong>H</strong>yper <strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol <strong>S</strong>ecure) or SSH (<strong>S</strong>ecure <strong>SH</strong>ell) credentialing approaches</li>
+<li>Chapter 11 in &quot;Happy Git and Github for the userR&quot; covers how to do use HTTPS</li>
+<li>Chapter 12 in &quot;Happy Git and Github for the userR&quot; covers how to set up SSH - I&#39;ll show how to do this from RStudio on the next slide</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>SSH RSA Key - generate from RStudio</h2></hgroup><article  id="ssh-rsa-key---generate-from-rstudio">
+
+<div class="columns-2">
+<ul>
+<li>SSH RSA Key is for setting up a <em><strong>public key-private key</strong></em> cryptosystem for secure data transmission
+
+<ul>
+<li>SSH = Secure SHell</li>
+<li>RSA = Rivest–Shamir–Adleman</li>
+</ul></li>
+<li>Click &quot;Create RSA Key&quot;
+
+<ul>
+<li>put in optonal passphrase (password)</li>
+<li>click &quot;Create&quot;</li>
+<li>your SSH key will be generated at the location listed</li>
+</ul></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitsshkey.PNG" alt="gitsshkey" style="width:400px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>Check that Git sees your SSH Key</h2></hgroup><article  id="check-that-git-sees-your-ssh-key">
+
+<ul>
+<li><p>Go back to your Git Bash window and check to see if Git also sees your new SSH key.</p></li>
+<li><p>In your Git Bash window type <code>ls -al ~/.ssh</code></p></li>
+<li><p>You should now see a pair of files listed like <code>id_rsa</code> and <code>id_rsa.pub</code></p></li>
+<li><p>See Section 12.2 in &quot;Happy Git and Github for the useR&quot; <a href='http://happygitwithr.com/ssh-keys.html' title=''>http://happygitwithr.com/ssh-keys.html</a></p></li>
+<li><p>you can also click the <code>? Using Version Control with RStudio</code> to get to RStudio&#39;s help website</p></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Quick Checklist - Recap</h2></hgroup><article  id="quick-checklist---recap">
+
+<ul>
+<li>Github Account created</li>
+<li>Logged into your Github Account</li>
+<li>Created a new Github repository &quot;MyFirstRepo&quot; - keep your browser open and logged in to your Github account and repository</li>
+<li>Git Bash Window is open and</li>
+<li>You are in your local directory for your new repository (type <code>pwd</code> for a quick check, <code>pwd</code> stands for &quot;path with directory&quot;)</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitdirectory.PNG" alt="gitdirectory" style="width:700px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Quick Checklist - Recap</h2></hgroup><article  id="quick-checklist---recap-1">
+
+<ul>
+<li>Check Git connection - make sure your correct email for your Github account is listed - type this command in your Git Bash window</li>
+</ul>
+
+<div class="centered">
+<p><code>git config --global --list</code></p></div>
+
+<ul>
+<li>Check SSH key - make sure you see the <code>id_rsa</code> and <code>id_rsa.pub</code> listed - type this in your Git Bash window</li>
+</ul>
+
+<div class="centered">
+<p><code>ls -al ~/.ssh</code></p></div>
+
+<p><em>NOTE: If you still get errors there is a chance you might have a credentialling conflict. If you have multiple Github accounts and switch between them, sometimes you have to remove the previous credentials and re-add your credentials for the other account. Search Stack Overflow and Github documentation for help.</em></p>
+
+</article></slide><slide class=''><hgroup><h2>Create New RStudio Project with Git Version Control</h2></hgroup><article  id="create-new-rstudio-project-with-git-version-control">
+
+<div class="columns-2">
+<ul>
+<li><p>Go back to RStudio</p></li>
+<li><p>Click File/New Project</p></li>
+<li><p>Choose the &quot;Version Control&quot; option</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojvc.PNG" alt="newprojvc" style="width:500px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>Create New RStudio Project with Git Version Control</h2></hgroup><article  id="create-new-rstudio-project-with-git-version-control-1">
+
+<ul>
+<li>Choose Git to &quot;Clone a project from a Git repository&quot;</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojgit.PNG" alt="newprojgit" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Create New RStudio Project with Git Version Control</h2></hgroup><article  id="create-new-rstudio-project-with-git-version-control-2" class="columns-2">
+
+<ul>
+<li>Go to your Github repository
+
+<ul>
+<li>click on the Clone or Download GREEN button</li>
+<li>we&#39;ll use the HTTPS option</li>
+<li>copy the URL to the clipboard</li>
+</ul></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitclone.PNG" alt="gitclone" style="width:400px;"></p></div>
+
+<ul>
+<li>&quot;Open in Desktop&quot; is for using the Github Desktop application which we will not use in this course.</li>
+<li>Download ZIP is very useful for getting copies of ANYONE&#39;s Github repository - but this only works offline and is not linked back to Github. This is great for seeing how other people setup their Github repositories and projects!</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Create New RStudio Project with Git Version Control</h2></hgroup><article  id="create-new-rstudio-project-with-git-version-control-3">
+
+<div class="columns-2">
+<ul>
+<li><p>Go back to RStudio paste the URL into the New Project dialog box on the 1st line for Repository URL - notice that the 2nd line is autopopulated - use these defaults.</p></li>
+<li><p>Check the directory locations on the 3rd line &quot;Create project as a subdirectory of:&quot; We have <code>C:\RepTemplates</code> If needed Browse to another location on your local drive.</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojclonegit.PNG" alt="newprojclonegit" style="width:500px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>Create New RStudio Project with Git Version Control</h2></hgroup><article  id="create-new-rstudio-project-with-git-version-control-4">
+
+<div class="columns-2">
+<ul>
+<li>Note: You can also click the little box on the bottom left for &quot;Open in new session&quot; if you want to open a new instance of RStudio.</li>
+<li>For now, leave this UNCHECKED. Click &quot;Create Project&quot;</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojclonegit.PNG" alt="newprojclonegit" style="width:500px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>ERROR</h2></hgroup><article  id="error">
+
+<div class="columns-2">
+<ul>
+<li><p>If you got an error like this one&#8230;</p></li>
+<li><p>Don&#39;t Panic.</p></li>
+<li><p>This ERROR occurred because we&#39;ve already cloned this repository previously using <code>git</code></p></li>
+<li><p>Go to your file directory on your local computer and DELETE the previous clone of <code>C:\RepTemplates\MyFirstRepo</code>.</p></li>
+<li><p>Once you&#39;ve deleted this directory and these files, clone the repository again&#8230; <em>(see next slide)</em></p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitclonerror.PNG" alt="gitclonerror" style="width:500px;"></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>RStudio - Redo New Project</h2></hgroup><article  id="rstudio---redo-new-project">
+
+<ul>
+<li><p>In RStudio, run through File/New Project/Version Control/Git/ and put in the URL for the repository again, click &quot;Create Project&quot; - this time it should work.</p></li>
+<li>RStudio will restart and that&#39;s ok.
+
+<ul>
+<li>There is a little window that pops up briefly stating that it is &quot;cloning&quot; your repository.</li>
+<li>This is basically the same step we previously when we typed <code>git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</code> but now RStudio did the <code>git</code> commands for you.</li>
+<li>This is great! Much less typing of <code>git</code> commands!!</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>RStudio - New project</h2></hgroup><article  id="rstudio---new-project">
+
+<ul>
+<li>You should now see on the bottom right that your &quot;Files&quot; window shows your current working directory is &quot;C:&quot; and there are 3 files
+
+<ul>
+<li><code>.gitignore</code> - this has some <code>git</code> instructions on what files to ignore</li>
+<li><code>MyFirstRepo.Rproj</code> - this has some settings on your new RStudio project setup</li>
+<li><code>README.md</code> - this is only file in your current Github repository - it is in plain <code>markdown</code> format</li>
+</ul></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojfiles.PNG" alt="newprojfiles" style="width:600px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>RStudio - New project</h2></hgroup><article  id="rstudio---new-project-1">
+
+<ul>
+<li>You will also notice at the top right, you have 3 TABS:
+
+<ul>
+<li>one for &quot;Environment&quot;</li>
+<li>one for &quot;History&quot;</li>
+<li>and one for &quot;Git&quot; - this indicates you are up and connected to Github</li>
+</ul></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojgittab.PNG" alt="newprojgittab" style="width:600px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Connected to Github via Git</h2></hgroup><article  id="connected-to-github-via-git">
+
+<ul>
+<li>Click on the <code>git</code> TAB at top left - it shows that the <code>.gitignore</code> and <code>MyFirstRepo.Rproj</code> files are new since they were created by RStudio when you created the new project - these files are currently on your local drive and NOT <em>(yet)</em> in the Github repository.</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/newprojgittab.PNG" alt="newprojgittab" style="width:600px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Make a Change - we&#39;ll Sync it up next</h2></hgroup><article  id="make-a-change---well-sync-it-up-next">
+
+<div class="centered">
+<p><img src="images/newprojfiles.PNG" alt="newprojfiles" style="width:600px;"></p></div>
+
+<ul>
+<li>Click on the <code>README.md</code> file - it will open up in the RStudio editor window at the top left.</li>
+<li>Add a second line of text like &quot;here is a new line of text&quot;</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/readmenewline.PNG" alt="readmenewline" style="width:600px;"></p></div>
+
+<ul>
+<li>Click save</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>See changes on Git TAB</h2></hgroup><article  id="see-changes-on-git-tab">
+
+<p>Notice that in the <code>git</code> TAB it shows that the <code>README.md</code> file has changed (or been modified) - this is indicated by the little blue &quot;M&quot; icon next to <code>README.md</code></p>
+
+<div class="centered">
+<p><img src="images/gitaddreadme.PNG" alt="gitaddreadme" style="width:600px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>&quot;Stage&quot;, &quot;Commit&quot;, &quot;PUSH&quot;</h2></hgroup><article  id="stage-commit-push">
+
+<p>We will follow a workflow process of &quot;Stage&quot; -&gt; &quot;Commit&quot; -&gt; &quot;PUSH&quot; which is analogous to online shopping where you put items in your shopping cart, review your order, and then place your order.</p>
+
+<div class="centered">
+<p><img src="images/shoppingdiagram.PNG" alt="shoppingdiagram.PNG" style="width:700px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Using RStudio to &quot;Stage&quot; changes</h2></hgroup><article  id="using-rstudio-to-stage-changes">
+
+<ul>
+<li><p>Go back and look at the <code>README.md</code> file in your Github repository back in your browser - notice it does not have the new line of text. This is because we have not yet committed our changes to the Github repository.</p></li>
+<li><p>To <strong>add</strong> (or <strong>&quot;Stage&quot;</strong>) your changes just made on your local drive using RStudio, we need to <strong>commit</strong> our changes to the <code>README.md</code> file and then <strong>PUSH</strong> them to your Github repository</p></li>
+<li><p>Click the box next to <code>README.md</code> to &quot;stage&quot; (or &quot;add&quot;) your changes</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitstagereadme.PNG" alt="gitstagereadme" style="width:600px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Using RStudio to &quot;Commit&quot; changes</h2></hgroup><article  id="using-rstudio-to-commit-changes" class="columns-2">
+
+<ul>
+<li><p>Click &quot;Commit&quot;</p></li>
+<li><p>This opens another dialog window showing the changes you made to your <code>README.md</code> file. This gives you a chance to review the changes you made and make sure you want to keep them - this is one last review, like reviewing your order before you place it.</p></li>
+<li><p>You should also type in a comment here about what this commit will change in your repository (i.e. files added, changed or deleted and why).</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitcommitreadme.PNG" alt="gitcommitreadme" style="width:500px;"></p></div>
+
+<ul>
+<li>Git Humor
+
+<ul>
+<li><a href='https://xkcd.com/1296/' title=''>https://xkcd.com/1296/</a></li>
+<li><a href='http://happygitwithr.com/comic-relief.html' title=''>http://happygitwithr.com/comic-relief.html</a></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Using RStudio to commit changes</h2></hgroup><article  id="using-rstudio-to-commit-changes-1">
+
+<ul>
+<li>Click commit - you should get back a message about the changes that will be made - then click Close</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitcommitmessage.PNG" alt="gitcommitmessage" style="width:500px;"></p></div>
+
+<ul>
+<li>We are not yet done - we still have to &quot;Buy/Purchase our order&quot; - we have to PUSH our &quot;commit&quot; to Github</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Using RStudio to commit changes</h2></hgroup><article  id="using-rstudio-to-commit-changes-2">
+
+<ul>
+<li>The next step - Click Green Up Arrow to <strong>PUSH</strong> <img src="images/gitpush.PNG" alt="gitpush" style="width:50px;"> your changes to your Github repository - it takes a minute to run but you should see something like below with no errors.</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitpushsuccess.PNG" alt="gitpushsuccess" style="width:500px;"></p></div>
+
+<ul>
+<li>Refresh your Github repository in your browser window you should now see your new line of text in your <code>README.md</code> file.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Before/After</h2></hgroup><article  id="beforeafter" class="columns-2">
+
+<div class="centered">
+
+<p>
+
+BEFORE <br> <img src="images/repohistory1.PNG" alt="repohistory1" style="width:500px;">
+
+</div>
+
+<div class="centered">
+
+<p>
+
+AFTER <br> <img src="images/repohistory2.PNG" alt="repohistory2" style="width:500px;">
+
+</div>
+
+</article></slide><slide class=''><hgroup><h2>See your changes in Github</h2></hgroup><article  id="see-your-changes-in-github">
+
+<ul>
+<li><p>Go to your browser window for your Github repository</p></li>
+<li><p>Notice that there is a commit message &quot;added a line of text to readme&quot; with a date/time stamp listed on when this change was made.</p></li>
+<li><p>click on the <code>README.md</code> file - it will open this file in the browser window</p></li>
+<li><p>In this window you have the option to view the <strong>RAW</strong> <code>README.md</code> file, which is basically text</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/rawblamehistory.PNG" alt="rawblamehistory" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Track Who did Changes in Github</h2></hgroup><article  id="track-who-did-changes-in-github">
+
+<ul>
+<li>Click <strong>BLAME</strong> to see who made changes to this file and when</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/readmeblame.PNG" alt="readmeblame" style="width:700px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>The History of Changes in Github</h2></hgroup><article  id="the-history-of-changes-in-github">
+
+<ul>
+<li><p>Click <strong>HISTORY</strong> to also see details on each commit - from here you can browse to that point in time to see what the repository looked like when that change was made.</p></li>
+<li>There is also a little number listed - this is a SHA code that is assigned for explicitly tracking each change made in the repository.
+
+<div class="centered">
+<p><img src="images/readmehistory.PNG" alt="readmehistory" style="width:700px;"></p></div></li>
+</ul>
+
+<p>Learn more: <a href='https://help.github.com/articles/github-glossary/' title=''>https://help.github.com/articles/github-glossary/</a> and <a href='https://help.github.com/' title=''>https://help.github.com/</a></p>
+
+</article></slide><slide class=''><hgroup><h2>Make a change on Github and PULL it to your local repo</h2></hgroup><article  id="make-a-change-on-github-and-pull-it-to-your-local-repo" class="columns-2">
+
+<ul>
+<li><p>Click on <code>README.md</code> in your Github repository (in browser), click the icon that looks like a pencil to edit <code>README.md</code> <img src="images/editreadme.PNG" alt="editreadme" style="width:100px;"></p></li>
+<li><p>Type in another line of text to change the <code>README.md</code> file online in your Github repository</p></li>
+<li><p>Scroll down to the bottom of the page, type in a short message about what you changed - click &quot;Commit Changes&quot;</p></li>
+</ul>
+
+<div class="centered">
+<p><img src="images/readmecommit2.PNG" alt="readmecommit2" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>PULL these new changes to your local project using RStudio</h2></hgroup><article  id="pull-these-new-changes-to-your-local-project-using-rstudio" class="columns-2">
+
+<ul>
+<li>Now what you have on Github is &quot;ahead&quot; of what you have on your local drive.</li>
+<li>You need to PULL these changes down to your local drive.</li>
+<li>Go back to RStudio, click on the Git TAB and click the blue down arrow to PULL down your changes <img src="images/gitpull.PNG" alt="gitpull" style="width:50px;"></li>
+<li>You should get back a message similar to this</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitpullmessage.PNG" alt="gitpullmessage" style="width:500px;"></p></div>
+
+<ul>
+<li>You should now see the changes in the <code>README.md</code> file inside RStudio.</li>
+</ul>
+
+<p><strong>TADA! You are now successfully using version control!</strong></p>
+
+</article></slide><slide class=''><hgroup><h2>Using Git Bash to commit changes</h2></hgroup><article  id="using-git-bash-to-commit-changes">
+
+<p>Sometimes using the interface to Git inside RStudio can be cumbersome and slow and when handling a lot of changes or a lot of files at once, it can crash or hang-up. So, the Git command line is often useful to also know how to use.</p>
+
+<p>Let&#39;s make another change to your <code>README.md</code> file, but this time, we&#39;ll <strong>Stage</strong>, <strong>Commit</strong> and <strong>PUSH</strong> the changes using the Git Bash window</p>
+
+</article></slide><slide class=''><hgroup><h2>Using Git Bash to commit changes</h2></hgroup><article  id="using-git-bash-to-commit-changes-1" class="columns-2">
+
+<ul>
+<li>Using RStudio, add one more line of new text to your <code>README.md</code> file and save your changes</li>
+<li>BUT, this time we will NOT use RStudio to commit the changes to Github - we&#39;ll use the Git Bash window instead.</li>
+<li>Go back to your Git Bash window</li>
+<li>Make sure you are in your repository directory</li>
+</ul>
+
+<div class="centered">
+<p><img src="images/gitstatus.PNG" alt="gitstatus" style="width:500px;"></p></div>
+
+<ul>
+<li>Type in <code>git status</code> and you should see the files that have changed on your local drive (<font size="5" color="red">red text</font> in window above) that are different from what is in the Github repository.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Using Git Bash to Stage, Commit &amp; PUSH</h2></hgroup><article  id="using-git-bash-to-stage-commit-push" class="columns-2">
+
+<p>&quot;Stage&quot; your changes using <code>git add .</code></p>
+
+<p>&quot;Commit&quot; your changes using <code>git commit -m &quot;add third line of text to readme&quot;</code></p>
+
+<p>&quot;Push&quot; your changes using <code>git push</code></p>
+
+<p>Check to see if everything sync&#39;d back up <code>git status</code></p>
+
+<p>Success!</p>
+
+<div class="centered">
+<p><img src="images/gitaddcommit.PNG" alt="gitaddcommit" style="width:500px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>Using Git Bash to PULL changes from Github to local</h2></hgroup><article  id="using-git-bash-to-pull-changes-from-github-to-local">
+
+<p>If you made changes in the Github repository online and you want to PULL the local changes down, make sure you are in the correct folder and then simply type <code>git pull</code> in your Git Bash window and the changes will sync up with local drive.</p>
+
+<div class="centered">
+<p><img src="images/gitpullreadme.PNG" alt="gitpullreadme" style="width:700px;"></p></div>
+
+</article></slide><slide class=''><hgroup><h2>When everything goes wrong</h2></hgroup><article  id="when-everything-goes-wrong">
+
+<span style="font-size: 24px;">
+
+<div class="columns-1">
+<p>It is not a question of &quot;IF&quot; but &quot;WHEN&quot; everything goes wrong and the Git process stops working. Read Chapter 26: &quot;Burn it all down&quot; in &quot;Happy Git and Github for the useR&quot;, <a href='http://happygitwithr.com/burn.html' title=''>http://happygitwithr.com/burn.html</a></p>
+
+<p>If/When something really goes wrong:</p>
+
+<ul>
+<li>Make a backup copy of your repository on your local drive.</li>
+<li>Delete the one that is not working</li>
+<li>Go back to Github and delete the repository that is not working</li>
+<li>Create a new repository again on Github</li>
+<li>Create a new project in RStudio using version control with Git</li>
+<li>Copy the backed up files on your local drive into the new folder with the recently recreated Github repository</li>
+<li>Stage, Commit and PUSH these changes from your local drive back up to Github.</li>
+<li>Hopefully, everything will work going forward.</li>
+</ul></div>
+
+<p></span></p>
+
+</article></slide><slide class=''><hgroup><h2>Other Git Clients</h2></hgroup><article  id="other-git-clients">
+
+<p>Besides using Git either from the Git Bash command line or from inside RStudio, there are many other clients (software) that can be used.</p>
+
+<p>If you plan to use more extensive version control or plan to use this approach working in teams, I highly encourage you to explore more full featured Git clients.</p>
+
+<p>Jenny Bryan covers these very well in Chapter 9 &quot;Install a Git Client&quot; in &quot;Happy Git and Github for the userR&quot;</p>
+
+<p>Her two top recommendations are:</p>
+
+<ul>
+<li>SourceTree <a href='https://www.sourcetreeapp.com/' title=''>https://www.sourcetreeapp.com/</a> and</li>
+<li>GitKracken <a href='https://www.gitkraken.com/' title=''>https://www.gitkraken.com/</a></li>
+</ul>
+
+<p>For this course, the RStudio interface and the Git Bash window will be sufficient. You should only need a basic understanding of Git to complete this course. But I encourage you to explore these other Git clients for future projects.</p>
+
+</article></slide><slide class=''><hgroup><h2>Getting Help</h2></hgroup><article  id="getting-help">
+
+<p>Jenny Bryan&#39;s &quot;Happy Git and Github for the useR&quot; <a href='http://happygitwithr.com/' title=''>http://happygitwithr.com/</a> is a wealth of knowledge and a great place to start for everything necessary linking Git and Github with RStudio.</p>
+
+<p>You can also seek help at:</p>
+
+<ul>
+<li><a href='https://www.rstudio.com/' title=''>https://www.rstudio.com/</a></li>
+<li>Hadley Wickham&#39;s site for R packages on setting up Git and Github at <a href='http://r-pkgs.had.co.nz/git.html#git-init' title=''>http://r-pkgs.had.co.nz/git.html#git-init</a></li>
+<li>and both Google <a href='https://www.google.com/' title=''>https://www.google.com/</a> (or any other search engine) and Stack Overflow <a href='https://stackoverflow.com/' title=''>https://stackoverflow.com/</a> are great places to find help. Sometimes the best way is to type in the error message you are getting and keep looking for related articles and postings on the web to find an answer that helps you.</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Congratulations!!</h2></hgroup><article  id="congratulations">
+
+<div style="margin-left:+100px; margin-top:+100px; width:80%; height:100%">
+<p>I know this was a long lesson, but, hopefully, you now have all of the software installed and working and have worked through the issues getting Git and Github working and linked into your RStudio setup.</p>
+
+<div class="centered">
+<p><br> <span style="font-size: 36px;">
+ <strong>Feel proud this is a major milestone!!</strong> </span> <br></p></div></div>
+
+</article></slide><slide class=''><hgroup><h2>Next in lesson 07 &#8230;</h2></hgroup><article  id="next-in-lesson-07-..." class="flexbox vcenter">
+
+<ul>
+<li>Make your first reproducible document
+
+<ul>
+<li>using <code>rmarkdown</code></li>
+<li>tracked with version control and</li>
+<li>linked to your Github repository</li>
+</ul></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

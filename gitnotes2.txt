@@ -8,6 +8,26 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
 https://github.com/melindahiggins2001/MyFirstRepo.git
 
+git clone https://github.com/melindahiggins2001/MyFirstRepo.git
+
+echo "A line I wrote on my local computer" >> README.md
+git status
+
+
+
+https://stackoverflow.com/questions/27087483/how-to-resolve-git-pull-fatal-unable-to-access-https-github-com-empty
+
+remove credentials on windows and ran again
+
+OPEN Windows Control Panel
+Click Credentials; Windows Credentials
+Find git:https://github.com and REMOVE
+Then run a git push and log in 
+and redo your github credentials to reset the github permissions
+
+
+
+
 SWITCH back to other account
 
 LOG out at Github.com
@@ -21,4 +41,64 @@ still shows mhigginsconsulting - so run these
 git config --global user.name 'Melinda Higgins'
 git config --global user.email 'melinda.higgins@emory.edu' 
 git config --global --list
+
+now it shows correct.
+
+let's try
+git status
+at "C:\RepTemplates\MyFirstRepo"
+
+cd C:\RepTemplates\MyFirstRepo
+git status
+
+{made minor edit to readme; add; commit both ok; push didn't work since I'm not logged in under the right permissions}
+
+try something under MyGithub
+like "C:\MyGithub\ReproducibleTemplates"
+
+git status - lots of changes
+git add .
+git commit -m "lots of lessons module 01"
+git push - worked!!
+git status - up to date
+
+---------- back to lesson 06
+logout of melindahiggins2000
+and go back to melindahiggins2001
+
+git config --global user.name 'Melinda Higgins'
+git config --global user.email 'mhigginsconsulting@gmail.com' 
+git config --global --list
+
+cd C:\RepTemplates\MyFirstRepo
+git status
+
+================================================
+10/09/2017
+================================================
+
+log out of github, log in as mhigginsconsulting@gmail.com
+
+git bash
+
+git config --global --list
+git config --global user.name 'Melinda Higgins'
+git config --global user.email 'mhigginsconsulting@gmail.com' 
+git config --global --list
+
+windows control panel - credential manager - windows credentials
+delete github and log back in
+
+
+
+
+git@github.com:melindahiggins2001/MyFirstRepo.git      SSH
+https://github.com/melindahiggins2001/MyFirstRepo.git  HTTPS
+
+
+
+
+
+
+
 

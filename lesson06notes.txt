@@ -1,0 +1,281 @@
+
+## In RStudio
+
+start RStudio and keep it open
+
+go to Tools/Global Options
+Click on Git/SVN
+
+[gitsvn.PNG]
+
+make sure "Enable version control interface for RStudio projects" is checked
+
+Git executable - you need to know where this is on your local drive - for my Windows system the "git.exe" executable file which runs Git is located at "C:/Program Files/Git/bin/git.exe"
+
+I am not using SVN so this is "not found" or blank
+
+## Credentials
+
+* each time you make a change and want to sync up your changes either from your local drive to the Github cloud or from the cloud to your local drive, you need to pass your credentials to Github.
+* you can do this by typing in your Github username and password each time - huge pain - or you need to set up credentials on your computer
+* you can do that either through HTTPS (Hyper Text Transfer Protocol Secure) or SSH (Secure SHell)
+* chapter 11 covers how to do this using HTTPS
+* chapter 12 covers hot to set up SSH - I show how to do this from RStudio on the next slide
+
+## SSH RSA Key - generate from RStudio
+
+* this is for setting up a public key-private key cryptosystem for secure data transmission
+* SSH = Secure SHell
+* RSA = Rivest–Shamir–Adleman
+
+Click "Create RSA Key"
+put in a passphrase (like a password) if you want (this is optional)
+and your SSH key will be generated at the location listed
+
+[gitsshkey.PNG]
+
+Go back to your Git Bash window and check to see if Git also sees your new SSH key. type
+
+ls -al ~/.ssh
+ you should now see a pair of files listed like `id_rsa` and `id_rsa.pub`
+
+see Section 12.2 [http://happygitwithr.com/ssh-keys.html](http://happygitwithr.com/ssh-keys.html)
+
+you can also lick the ? Using Version Control with RStudio to get to RStudio's help website 
+
+## Quick Checklist
+
+1. Github Account created
+2. Logged into your Github Account
+3. Created a new Github repository "MyFirstRepo" - keep your browser open and logged in to your Github account and repository
+4. Git Bash Window is open and
+5. You are in your local directory for your new repository (type `pwd` for a quick check)
+
+[gitdirectory.PNG]
+
+## Quick Checklist
+
+6. check Git connection - make sure your correct email for your Github account is listed - type this command in your Git Bash window
+
+`git config --global --list`
+
+7. check SSH key - make sure you see the `id_rsa` and `id_rsa.pub` listed - type this in your Git Bash window
+
+`ls -al ~/.ssh`
+
+## Create New RStudio Project with Git Version Control
+
+1. Go back to RStudio
+2. Click File/New Project
+3. Choose the "Version Control" option
+
+[newprojvc.PNG]
+
+4. Choose Git to "Clone a project from a Git repository"
+
+[newprojgit.PNG]
+
+5. Go to your Github repository - click on the Clone or Download GREEN button - for now we'll use the HTTPS option - copy the URL to the clipboard
+
+[gitclone.PNG]
+
+6. Go back to RStudio paste the URL into the New Project dialog box on the 1st line for Repository URL - notice that the 2nd line is autopopulated - use these defaults. 
+
+Check the 3rd line "Create project as a subdirectory of:" for example, "C:\RepTemplates"
+
+[newprojclonegit.PNG]
+
+Note: You can also click the little box on the bottom left for "Open in new session" if you want to open a new instance of RStudio. For now, leave this UNCHECKED. Click "Create Project"
+
+## ERROR
+
+If you got an error like this one
+
+[gitclonerror.PNG]
+
+don't panic. This is because we've already cloned this repository once above using the `git` command `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git`.
+
+So, go to your file directory and DELETE the previous clone of "C:\RepTemplates\MyFirstRepo". once you've deleted this directory and these files. try to clone the repository again.
+
+So, in RStudio, run through File/New Project/Version Control/Git/ and put in the URL for the repository again - this time it should work.
+
+7. RStudio will restart. 
+
+* There is a little window that pops up briefly stating that it is "cloning" your repository. 
+* This is basically the same step we previously when we typed `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git` but now RStudio did the `git` commands for you. This is great! much less typing of `git` commands!!
+
+8. you should now see on the bottom right that your "Files" window shows your current working directory is "C:\RepTemplates\MyFirstRepo" and there are 3 files
+
+* `.gitignore` - this has some `git` instructions on what files to ignore
+* `MyFirstRepo.Rproj` - this has some settings on your new RStudio project setup
+* `README.md` - this is only file in your current Github repository - it is in plain `markdown` format
+
+9. You will also notice at the top right, you have 3 TABS: 
+
+* one for "Environment"
+* one for "History"
+* and one for "Git" - this indicates you are up and connected to Github
+
+[newporjfiles.PNG]
+
+## Make a change and sync it up
+
+click on the `git` TAB at top left - it shows that the `.gitignore` and `MyFirstRepo.Rproj` files are new since they were created by RStudio when you created the new project - these files are currently on your local drive and NOT in the Github repository.
+
+[newprojgittab.PNG]
+
+Click on the README.md file - it will open up in the RStudio editor window at the top left.
+
+Add a second line of text like "here is a new line of text"
+
+[readmenewline.PNG]
+
+click save
+
+Notice that in the `git` TAB it shows that the README.md file has changed - this is indicated by the little blue "M" icon next to README.md
+
+[gitaddreadme.PNG]
+
+## Using RStudio to commit changes
+
+1. go back and look at the `README` file in your Github repository back in your browser - notice it does not have the new line of text. this is because we have not yet backed up our changes.
+2. to add your changes just made on your local drive using RStudio, we need to commit our changes to the README file and then PUSH them to your Github repository
+3. Click the box next to `README.md` to "stage" (or "add") your changes
+
+[gitstagereadme.PNG]
+
+4. Click "Commit" 
+
+* this opens another dialog window showing the changes you made to your README.md file. This gives you a chance to review the changes you made and make sure you want to keep them - one last review.
+* you should also type in a comment here about what you did in this change that you comitting to your repository
+
+[gitcommitreadme.PNG]
+
+5. Click commit - you should get back a message about the changes that will be made - then click Close
+
+[gitcommitmessage.PNG]
+
+6. there is still ONE MORE STEP - Click Green Up Arrow to PUSH your changes to your Github repository - it takes a minute to run but you should see something like below with no errors.
+
+[gitpushsuccess.PNG]
+
+7. refresh your Github repository in your browser window you should now see your new line of text in your readme file.
+
+## tracking your changes
+
+Go to your browser window for your github repository
+
+* notice that there is a commit message "added a line of text to readme" with some time listed on how recently this change was made.
+
+click on the `README.md` file - it will open this file in the browser window
+
+in this window you have the option to view the RAW file, which is basically text
+
+you can click BLAME to see the list of who has made changes to the file and when
+
+[readmeblame.PNG]
+
+and you can click HISTORY to also see details on each commit - from here you can browse to that point in time to see what the repository looked like when that change was made. 
+
+there is also a little number listed - this is a SHA code that is assigned for explicitly tracking each change made in the repository. 
+
+[readmehistory.PNG](readmehistory.PNG)
+
+you can learn more at [https://help.github.com/articles/github-glossary/](https://help.github.com/articles/github-glossary/) and overall at [https://help.github.com/](https://help.github.com/)
+
+## Make a change on Github and PULL it to your local repo
+
+click on `README.md` in your browser window, click the icon that looks like a pencil
+
+[editreadme.PNG]
+
+type in some change - add another line of text
+
+at the bottom of the page, type in a short message on what you changed and click Commit Changes
+
+[readmecommit2.PNG]
+
+now what you have on Github is "ahead" of what you have on your local drive. Now you need to PULL these changes down to your local drive.
+
+go back to RStudio, click on the Git TAB and click the blue down arrow to PULL down your changes
+
+[gitpull.PNG]
+
+you should get back a message similar to this
+
+[gitpullmessage.PNG]
+
+you should see the changes in the README.md file inside RStudio.
+
+## Using Git Bash to commit changes
+
+Sometimes using the interface to Git inside RStudio can be cumbersome and slow and when handling a lot of changes or a lot of files at once, it can crash. So, the Git command line is often useful to also know how to use.
+
+Let's make another change to your README.md file, but this time, we'll stage, commit and PUSH the changes using the Git Bash window
+
+1. add one more line of new text to your README.md file and save your changes
+2. this time we will NOT use RStudio to commit the changes to Github, but we'll use the Git Bash window instead.
+
+3. Go back to your Git Bash windows
+4. make sure you are in your repository directory
+5. type in `git status` and you should get back a message showing that you have changes on your local drive that are different from what is on the Github repository.
+
+[gitstatus.PNG]
+
+6. "Stage" your changes using `git add .`
+7. "Commit" your changes using `git commit -m "add third line of text to readme"`
+8. "Push" your changes using `git push`
+9. check to see if everything sych'd back up `git status`
+
+[gitaddcommit.PNG]
+
+NOTE: if you made changes in the Github repository online and you want to PULL the local changes down, make sure you are in the correct folder and then simply type `git pull` in your Git Bash window and the changes will sync up into your local drive.
+
+[gitpullreadme.PNG]
+
+## When everything goes wrong
+
+see Chapter 26 to "Burn it all down"
+
+[http://happygitwithr.com/burn.html](http://happygitwithr.com/burn.html)
+
+If something really goes wrong, 
+
+* make a backup copy of your repository on your local drive. 
+* Delete the one that is not working
+* go back to github and delete the repository that is not working
+* create a new repository again
+* create a new project and link back up through RStudio
+* copy the backed up files on your local drive into the folder with the recently recreated repository
+* stage, commit and push these changes from your local drive back up to Github. 
+* hopefully, everything will work going forward.
+
+## Other Git Clients
+
+Besides using Git either from the Git Bash command line ot from inside RStudio, there are many other clients (software) that can be used.
+
+if you plan to use more extensive version control or plan to use this approach working in teams, i highly encourage you to explore more full featured git clients. jenny bryan covers these very well in Chapter 9 "Install a Git Client" in her book "Happy Git and Github for the userR"
+
+Her two top recommendations are:
+* SourceTree [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/) and
+* GitKracken [https://www.gitkraken.com/](https://www.gitkraken.com/)
+
+For this course, the RStudio interface and the Git Bash window will be sufficient. You should only need a basic understanding of Git to complete this course. But I encourage you to explore these other Git Clients for future projects.
+
+## Congratulations!! and Getting Help
+
+I know this was a long lesson, but hopefully, you now have all of the software installed and working and have worked through the issues getting Git and Github working and linked into your RStudio setup. Feel proud this is a mjor milestone!!
+
+Jenny Bryan's book is a wealth of knowledge and a great place to start for everything necessary linking Git and Github with RStudio.
+
+You can also seek help at RStudio.com
+
+Hadley Wickham's site for R packages on setting up Git and Github at [http://r-pkgs.had.co.nz/git.html#git-init](http://r-pkgs.had.co.nz/git.html#git-init)
+
+and both Google (or any other search engine) and Stack Overflow [https://stackoverflow.com/](https://stackoverflow.com/) are great places to find help. Sometimes the best way is to type in the error message you are getting and keep looking for related articles and postings on the web to find an answer that helps you
+
+## Next in lesson 07...
+
+make your first reproducible document using `rmarkdown` tracked with version control and saved in a github repository
+
+
